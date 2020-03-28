@@ -100,6 +100,7 @@ namespace colloquiumDM {
 
 	private: System::Windows::Forms::TextBox^ main_screen_N;
 	private: System::Windows::Forms::TextBox^ additional_screen_N;
+	private: System::Windows::Forms::Label^ lbl_info;
 
 	protected:
 
@@ -282,6 +283,7 @@ namespace colloquiumDM {
 			this->button_2_N = (gcnew System::Windows::Forms::Button());
 			this->button_MINUSMINUS_N = (gcnew System::Windows::Forms::Button());
 			this->button_3_N = (gcnew System::Windows::Forms::Button());
+			this->lbl_info = (gcnew System::Windows::Forms::Label());
 			this->TabControl->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->SuspendLayout();
@@ -375,6 +377,7 @@ namespace colloquiumDM {
 			this->main_screen_N->Size = System::Drawing::Size(598, 29);
 			this->main_screen_N->TabIndex = 92;
 			this->main_screen_N->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+			this->main_screen_N->TextChanged += gcnew System::EventHandler(this, &MyForm::main_screen_N_TextChanged);
 			this->main_screen_N->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::main_screen_N_KeyPress);
 			// 
 			// label1
@@ -484,6 +487,7 @@ namespace colloquiumDM {
 			this->button_PLUS_N->TabIndex = 76;
 			this->button_PLUS_N->Text = L"+";
 			this->button_PLUS_N->UseVisualStyleBackColor = false;
+			this->button_PLUS_N->Click += gcnew System::EventHandler(this, &MyForm::button_PLUS_N_Click);
 			// 
 			// button_4_N
 			// 
@@ -500,6 +504,7 @@ namespace colloquiumDM {
 			this->button_4_N->TabIndex = 74;
 			this->button_4_N->Text = L"4";
 			this->button_4_N->UseVisualStyleBackColor = false;
+			this->button_4_N->Click += gcnew System::EventHandler(this, &MyForm::button_4_N_Click);
 			// 
 			// button_7_N
 			// 
@@ -516,6 +521,7 @@ namespace colloquiumDM {
 			this->button_7_N->TabIndex = 73;
 			this->button_7_N->Text = L"7";
 			this->button_7_N->UseVisualStyleBackColor = false;
+			this->button_7_N->Click += gcnew System::EventHandler(this, &MyForm::button_7_N_Click);
 			// 
 			// button_5_N
 			// 
@@ -532,6 +538,7 @@ namespace colloquiumDM {
 			this->button_5_N->TabIndex = 70;
 			this->button_5_N->Text = L"5";
 			this->button_5_N->UseVisualStyleBackColor = false;
+			this->button_5_N->Click += gcnew System::EventHandler(this, &MyForm::button_5_N_Click);
 			// 
 			// button_8_N
 			// 
@@ -548,6 +555,7 @@ namespace colloquiumDM {
 			this->button_8_N->TabIndex = 69;
 			this->button_8_N->Text = L"8";
 			this->button_8_N->UseVisualStyleBackColor = false;
+			this->button_8_N->Click += gcnew System::EventHandler(this, &MyForm::button_8_N_Click);
 			// 
 			// button_6_N
 			// 
@@ -564,6 +572,7 @@ namespace colloquiumDM {
 			this->button_6_N->TabIndex = 66;
 			this->button_6_N->Text = L"6";
 			this->button_6_N->UseVisualStyleBackColor = false;
+			this->button_6_N->Click += gcnew System::EventHandler(this, &MyForm::button_6_N_Click);
 			// 
 			// button_9_N
 			// 
@@ -580,6 +589,7 @@ namespace colloquiumDM {
 			this->button_9_N->TabIndex = 65;
 			this->button_9_N->Text = L"9";
 			this->button_9_N->UseVisualStyleBackColor = false;
+			this->button_9_N->Click += gcnew System::EventHandler(this, &MyForm::button_9_N_Click);
 			// 
 			// additional_screen_N
 			// 
@@ -767,6 +777,7 @@ namespace colloquiumDM {
 			this->button_0_N->TabIndex = 72;
 			this->button_0_N->Text = L"0";
 			this->button_0_N->UseVisualStyleBackColor = false;
+			this->button_0_N->Click += gcnew System::EventHandler(this, &MyForm::button_0_N_Click);
 			// 
 			// button_2_N
 			// 
@@ -783,6 +794,7 @@ namespace colloquiumDM {
 			this->button_2_N->TabIndex = 71;
 			this->button_2_N->Text = L"2";
 			this->button_2_N->UseVisualStyleBackColor = false;
+			this->button_2_N->Click += gcnew System::EventHandler(this, &MyForm::button_2_N_Click);
 			// 
 			// button_MINUSMINUS_N
 			// 
@@ -815,39 +827,121 @@ namespace colloquiumDM {
 			this->button_3_N->TabIndex = 67;
 			this->button_3_N->Text = L"3";
 			this->button_3_N->UseVisualStyleBackColor = false;
+			this->button_3_N->Click += gcnew System::EventHandler(this, &MyForm::button_3_N_Click);
+			// 
+			// lbl_info
+			// 
+			this->lbl_info->AutoSize = true;
+			this->lbl_info->ForeColor = System::Drawing::Color::DarkRed;
+			this->lbl_info->Location = System::Drawing::Point(231, 381);
+			this->lbl_info->Name = L"lbl_info";
+			this->lbl_info->Size = System::Drawing::Size(162, 13);
+			this->lbl_info->TabIndex = 65;
+			this->lbl_info->Text = L"Информационные сообщения!";
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			this->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			this->ClientSize = System::Drawing::Size(638, 378);
+			this->ClientSize = System::Drawing::Size(638, 406);
+			this->Controls->Add(this->lbl_info);
 			this->Controls->Add(this->TabControl);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyForm";
-			this->Text = L"Calc";
+			this->Text = L"Calculate";
 			this->TabControl->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 		
-
+//------------------------- Main Screen --------------------------------------
 private: System::Void main_screen_N_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	if ((e->KeyChar >= '0') && (e->KeyChar <= '9') 
 		|| (e->KeyChar == '\b')		//backspace
-		|| (e->KeyChar == '+') 
-		|| (e->KeyChar == '-') 
-		|| (e->KeyChar == '*') 
-		|| (e->KeyChar == '/')) 
+		|| ((e->KeyChar == '+') || (e->KeyChar == '-') || (e->KeyChar == '*') || (e->KeyChar == '/')) && checkMainScreenNotEmpty()
+			) 
 		return;
 	e->Handled = true;
 }
+private: bool checkMainScreenNotEmpty() {
+	return main_screen_N->Text->Length > 0;
+}
+private: void printNullMainScreen() {
+	lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
+}
+private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	TextBox^ txtMain = (TextBox^)sender;
+
+	lbl_info->Text = "";
+
+	if (checkMainScreenNotEmpty()) {
+		int length = main_screen_N->Text->Length;		
+		switch (main_screen_N->Text[length - 1])
+		{
+		case '+':
+			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
+		case '-':
+			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
+		case '*':
+			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
+		case '/':
+			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
+		default:
+			break;
+		}
+	}	
+}
+//-------------------------------------------------------------------------------
+//------------------------- btn number logic--------------------------------------
 private: System::Void button_1_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
 	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 }
+private: System::Void button_2_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_3_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_4_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_5_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_6_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_7_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_8_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_9_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_0_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button_PLUS_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (checkMainScreenNotEmpty()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
+	else {
+		printNullMainScreen();
+	}
+}
+//-------------------------------------------------------------------------------
+//------------------------- btn operation logic--------------------------------------
+private: void operationPlus() {
+	
+}
+//-------------------------------------------------------------------------------
 };
 }
