@@ -264,7 +264,7 @@ namespace colloquiumDM {
 			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage4->Size = System::Drawing::Size(633, 356);
 			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"Polynomials";
+			this->tabPage4->Text = L"Многочлены";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// tabPage3
@@ -274,7 +274,7 @@ namespace colloquiumDM {
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage3->Size = System::Drawing::Size(633, 356);
 			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"Rational Numbers";
+			this->tabPage3->Text = L"Рациональные числа";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// tabPage2
@@ -284,7 +284,7 @@ namespace colloquiumDM {
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage2->Size = System::Drawing::Size(633, 356);
 			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Integer Numbers";
+			this->tabPage2->Text = L"Целые числа";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// TabControl
@@ -335,7 +335,7 @@ namespace colloquiumDM {
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage1->Size = System::Drawing::Size(633, 356);
 			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"Natural Numbers";
+			this->tabPage1->Text = L"Натуральные числа";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
 			// textBox1
