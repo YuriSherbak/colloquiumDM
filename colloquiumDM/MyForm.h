@@ -875,6 +875,11 @@ private: System::Void main_screen_N_KeyPress(System::Object^ sender, System::Win
 private: bool checkMainScreenNotEmpty() {
 	return main_screen_N->Text->Length > 0;
 }
+private: bool checkmainScreenFirstIsNotNull() {
+	if (!checkMainScreenNotEmpty()) return true;
+
+	return main_screen_N->Text[0] != '0';
+}
 private: bool checkAdditionalScreenNotEmpty() {
 	return additional_screen_N->Text->Length > 0;
 }
@@ -919,43 +924,63 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 //------------------------- btn logic--------------------------------------
 private: System::Void button_1_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}	
 }
 private: System::Void button_2_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_3_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_4_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_5_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_6_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_7_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_8_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_9_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_0_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	if (checkmainScreenFirstIsNotNull()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_PLUS_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
