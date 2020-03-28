@@ -42,35 +42,64 @@ namespace colloquiumDM {
 
 
 	private: System::Windows::Forms::TabPage^ tabPage1;
-	private: System::Windows::Forms::TextBox^ textBox1;
+
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Button^ button_10DEGREE;
-	private: System::Windows::Forms::Button^ button_CE;
-	private: System::Windows::Forms::Button^ button_AC;
-	private: System::Windows::Forms::Button^ button_COM;
-	private: System::Windows::Forms::Button^ button_MINUS;
-	private: System::Windows::Forms::Button^ button_PLUS;
-	private: System::Windows::Forms::Button^ button_4;
-	private: System::Windows::Forms::Button^ button_7;
-	private: System::Windows::Forms::Button^ button_5;
-	private: System::Windows::Forms::Button^ button_8;
-	private: System::Windows::Forms::Button^ button_6;
-	private: System::Windows::Forms::Button^ button_9;
-	private: System::Windows::Forms::TextBox^ textBox2;
-	private: System::Windows::Forms::Button^ button_CHANGE_SIGN;
-	private: System::Windows::Forms::Button^ button_LCM;
-	private: System::Windows::Forms::Button^ button_GCD;
-	private: System::Windows::Forms::Button^ button_MOD;
-	private: System::Windows::Forms::Button^ button_DIV;
-	private: System::Windows::Forms::Button^ button_PLUSPLUS;
-	private: System::Windows::Forms::Button^ button_EQUALS;
-	private: System::Windows::Forms::Button^ button_COMMA;
-	private: System::Windows::Forms::Button^ button_MULT;
-	private: System::Windows::Forms::Button^ button_1;
-	private: System::Windows::Forms::Button^ button_0;
-	private: System::Windows::Forms::Button^ button_2;
-	private: System::Windows::Forms::Button^ button_MINUSMINUS;
-	private: System::Windows::Forms::Button^ button_3;
+	private: System::Windows::Forms::Button^ button_10DEGREE_N;
+
+	private: System::Windows::Forms::Button^ button_CE_N;
+	private: System::Windows::Forms::Button^ button_AC_N;
+	private: System::Windows::Forms::Button^ button_COM_N;
+
+
+
+	private: System::Windows::Forms::Button^ button_MINUS_N;
+
+	private: System::Windows::Forms::Button^ button_PLUS_N;
+
+	private: System::Windows::Forms::Button^ button_4_N;
+
+	private: System::Windows::Forms::Button^ button_7_N;
+	private: System::Windows::Forms::Button^ button_5_N;
+
+
+	private: System::Windows::Forms::Button^ button_8_N;
+	private: System::Windows::Forms::Button^ button_6_N;
+
+
+	private: System::Windows::Forms::Button^ button_9_N;
+	private: System::Windows::Forms::Button^ button_CHANGE_SIGN_N;
+	private: System::Windows::Forms::Button^ button_LCM_N;
+	private: System::Windows::Forms::Button^ button_GCD_N;
+
+
+
+
+
+	private: System::Windows::Forms::Button^ button_MOD_N;
+	private: System::Windows::Forms::Button^ button_DIV_N;
+	private: System::Windows::Forms::Button^ button_PLUSPLUS_N;
+
+
+
+	private: System::Windows::Forms::Button^ button_EQUALS_N;
+	private: System::Windows::Forms::Button^ button_COMMA_N;
+
+
+
+	private: System::Windows::Forms::Button^ button_MULT_N;
+
+	private: System::Windows::Forms::Button^ button_1_N;
+	private: System::Windows::Forms::Button^ button_0_N;
+
+
+	private: System::Windows::Forms::Button^ button_2_N;
+	private: System::Windows::Forms::Button^ button_MINUSMINUS_N;
+
+
+	private: System::Windows::Forms::Button^ button_3_N;
+
+	private: System::Windows::Forms::TextBox^ main_screen_N;
+	private: System::Windows::Forms::TextBox^ additional_screen_N;
 
 	protected:
 
@@ -224,35 +253,35 @@ namespace colloquiumDM {
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->TabControl = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->main_screen_N = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button_10DEGREE = (gcnew System::Windows::Forms::Button());
-			this->button_CE = (gcnew System::Windows::Forms::Button());
-			this->button_AC = (gcnew System::Windows::Forms::Button());
-			this->button_COM = (gcnew System::Windows::Forms::Button());
-			this->button_MINUS = (gcnew System::Windows::Forms::Button());
-			this->button_PLUS = (gcnew System::Windows::Forms::Button());
-			this->button_4 = (gcnew System::Windows::Forms::Button());
-			this->button_7 = (gcnew System::Windows::Forms::Button());
-			this->button_5 = (gcnew System::Windows::Forms::Button());
-			this->button_8 = (gcnew System::Windows::Forms::Button());
-			this->button_6 = (gcnew System::Windows::Forms::Button());
-			this->button_9 = (gcnew System::Windows::Forms::Button());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->button_CHANGE_SIGN = (gcnew System::Windows::Forms::Button());
-			this->button_LCM = (gcnew System::Windows::Forms::Button());
-			this->button_GCD = (gcnew System::Windows::Forms::Button());
-			this->button_MOD = (gcnew System::Windows::Forms::Button());
-			this->button_DIV = (gcnew System::Windows::Forms::Button());
-			this->button_PLUSPLUS = (gcnew System::Windows::Forms::Button());
-			this->button_EQUALS = (gcnew System::Windows::Forms::Button());
-			this->button_COMMA = (gcnew System::Windows::Forms::Button());
-			this->button_MULT = (gcnew System::Windows::Forms::Button());
-			this->button_1 = (gcnew System::Windows::Forms::Button());
-			this->button_0 = (gcnew System::Windows::Forms::Button());
-			this->button_2 = (gcnew System::Windows::Forms::Button());
-			this->button_MINUSMINUS = (gcnew System::Windows::Forms::Button());
-			this->button_3 = (gcnew System::Windows::Forms::Button());
+			this->button_10DEGREE_N = (gcnew System::Windows::Forms::Button());
+			this->button_CE_N = (gcnew System::Windows::Forms::Button());
+			this->button_AC_N = (gcnew System::Windows::Forms::Button());
+			this->button_COM_N = (gcnew System::Windows::Forms::Button());
+			this->button_MINUS_N = (gcnew System::Windows::Forms::Button());
+			this->button_PLUS_N = (gcnew System::Windows::Forms::Button());
+			this->button_4_N = (gcnew System::Windows::Forms::Button());
+			this->button_7_N = (gcnew System::Windows::Forms::Button());
+			this->button_5_N = (gcnew System::Windows::Forms::Button());
+			this->button_8_N = (gcnew System::Windows::Forms::Button());
+			this->button_6_N = (gcnew System::Windows::Forms::Button());
+			this->button_9_N = (gcnew System::Windows::Forms::Button());
+			this->additional_screen_N = (gcnew System::Windows::Forms::TextBox());
+			this->button_CHANGE_SIGN_N = (gcnew System::Windows::Forms::Button());
+			this->button_LCM_N = (gcnew System::Windows::Forms::Button());
+			this->button_GCD_N = (gcnew System::Windows::Forms::Button());
+			this->button_MOD_N = (gcnew System::Windows::Forms::Button());
+			this->button_DIV_N = (gcnew System::Windows::Forms::Button());
+			this->button_PLUSPLUS_N = (gcnew System::Windows::Forms::Button());
+			this->button_EQUALS_N = (gcnew System::Windows::Forms::Button());
+			this->button_COMMA_N = (gcnew System::Windows::Forms::Button());
+			this->button_MULT_N = (gcnew System::Windows::Forms::Button());
+			this->button_1_N = (gcnew System::Windows::Forms::Button());
+			this->button_0_N = (gcnew System::Windows::Forms::Button());
+			this->button_2_N = (gcnew System::Windows::Forms::Button());
+			this->button_MINUSMINUS_N = (gcnew System::Windows::Forms::Button());
+			this->button_3_N = (gcnew System::Windows::Forms::Button());
 			this->TabControl->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->SuspendLayout();
@@ -301,35 +330,35 @@ namespace colloquiumDM {
 			// 
 			// tabPage1
 			// 
-			this->tabPage1->Controls->Add(this->textBox1);
+			this->tabPage1->Controls->Add(this->main_screen_N);
 			this->tabPage1->Controls->Add(this->label1);
-			this->tabPage1->Controls->Add(this->button_10DEGREE);
-			this->tabPage1->Controls->Add(this->button_CE);
-			this->tabPage1->Controls->Add(this->button_AC);
-			this->tabPage1->Controls->Add(this->button_COM);
-			this->tabPage1->Controls->Add(this->button_MINUS);
-			this->tabPage1->Controls->Add(this->button_PLUS);
-			this->tabPage1->Controls->Add(this->button_4);
-			this->tabPage1->Controls->Add(this->button_7);
-			this->tabPage1->Controls->Add(this->button_5);
-			this->tabPage1->Controls->Add(this->button_8);
-			this->tabPage1->Controls->Add(this->button_6);
-			this->tabPage1->Controls->Add(this->button_9);
-			this->tabPage1->Controls->Add(this->textBox2);
-			this->tabPage1->Controls->Add(this->button_CHANGE_SIGN);
-			this->tabPage1->Controls->Add(this->button_LCM);
-			this->tabPage1->Controls->Add(this->button_GCD);
-			this->tabPage1->Controls->Add(this->button_MOD);
-			this->tabPage1->Controls->Add(this->button_DIV);
-			this->tabPage1->Controls->Add(this->button_PLUSPLUS);
-			this->tabPage1->Controls->Add(this->button_EQUALS);
-			this->tabPage1->Controls->Add(this->button_COMMA);
-			this->tabPage1->Controls->Add(this->button_MULT);
-			this->tabPage1->Controls->Add(this->button_1);
-			this->tabPage1->Controls->Add(this->button_0);
-			this->tabPage1->Controls->Add(this->button_2);
-			this->tabPage1->Controls->Add(this->button_MINUSMINUS);
-			this->tabPage1->Controls->Add(this->button_3);
+			this->tabPage1->Controls->Add(this->button_10DEGREE_N);
+			this->tabPage1->Controls->Add(this->button_CE_N);
+			this->tabPage1->Controls->Add(this->button_AC_N);
+			this->tabPage1->Controls->Add(this->button_COM_N);
+			this->tabPage1->Controls->Add(this->button_MINUS_N);
+			this->tabPage1->Controls->Add(this->button_PLUS_N);
+			this->tabPage1->Controls->Add(this->button_4_N);
+			this->tabPage1->Controls->Add(this->button_7_N);
+			this->tabPage1->Controls->Add(this->button_5_N);
+			this->tabPage1->Controls->Add(this->button_8_N);
+			this->tabPage1->Controls->Add(this->button_6_N);
+			this->tabPage1->Controls->Add(this->button_9_N);
+			this->tabPage1->Controls->Add(this->additional_screen_N);
+			this->tabPage1->Controls->Add(this->button_CHANGE_SIGN_N);
+			this->tabPage1->Controls->Add(this->button_LCM_N);
+			this->tabPage1->Controls->Add(this->button_GCD_N);
+			this->tabPage1->Controls->Add(this->button_MOD_N);
+			this->tabPage1->Controls->Add(this->button_DIV_N);
+			this->tabPage1->Controls->Add(this->button_PLUSPLUS_N);
+			this->tabPage1->Controls->Add(this->button_EQUALS_N);
+			this->tabPage1->Controls->Add(this->button_COMMA_N);
+			this->tabPage1->Controls->Add(this->button_MULT_N);
+			this->tabPage1->Controls->Add(this->button_1_N);
+			this->tabPage1->Controls->Add(this->button_0_N);
+			this->tabPage1->Controls->Add(this->button_2_N);
+			this->tabPage1->Controls->Add(this->button_MINUSMINUS_N);
+			this->tabPage1->Controls->Add(this->button_3_N);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
@@ -338,14 +367,15 @@ namespace colloquiumDM {
 			this->tabPage1->Text = L"Натуральные числа";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
-			// textBox1
+			// main_screen_N
 			// 
-			this->textBox1->Location = System::Drawing::Point(17, 37);
-			this->textBox1->Multiline = true;
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(598, 29);
-			this->textBox1->TabIndex = 92;
-			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+			this->main_screen_N->Location = System::Drawing::Point(17, 37);
+			this->main_screen_N->Multiline = true;
+			this->main_screen_N->Name = L"main_screen_N";
+			this->main_screen_N->Size = System::Drawing::Size(598, 29);
+			this->main_screen_N->TabIndex = 92;
+			this->main_screen_N->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+			this->main_screen_N->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &MyForm::main_screen_N_KeyPress);
 			// 
 			// label1
 			// 
@@ -359,430 +389,432 @@ namespace colloquiumDM {
 			this->label1->TabIndex = 91;
 			this->label1->Text = L"З\r\nД\r\nЕ\r\nС\r\nЬ\r\nО\r\nП\r\nИ\r\nС\r\nА\r\nН\r\nИ\r\nЕ\r\nФУНК\r\nЦИЙ";
 			// 
-			// button_10DEGREE
+			// button_10DEGREE_N
 			// 
-			this->button_10DEGREE->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_10DEGREE->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_10DEGREE->FlatAppearance->BorderSize = 0;
-			this->button_10DEGREE->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_10DEGREE->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_10DEGREE_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_10DEGREE_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_10DEGREE_N->FlatAppearance->BorderSize = 0;
+			this->button_10DEGREE_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_10DEGREE_N->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_10DEGREE->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_10DEGREE->Location = System::Drawing::Point(341, 128);
-			this->button_10DEGREE->Name = L"button_10DEGREE";
-			this->button_10DEGREE->Size = System::Drawing::Size(50, 50);
-			this->button_10DEGREE->TabIndex = 90;
-			this->button_10DEGREE->Text = L"10^x";
-			this->button_10DEGREE->UseVisualStyleBackColor = false;
+			this->button_10DEGREE_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_10DEGREE_N->Location = System::Drawing::Point(341, 132);
+			this->button_10DEGREE_N->Name = L"button_10DEGREE_N";
+			this->button_10DEGREE_N->Size = System::Drawing::Size(50, 50);
+			this->button_10DEGREE_N->TabIndex = 90;
+			this->button_10DEGREE_N->Text = L"10^x";
+			this->button_10DEGREE_N->UseVisualStyleBackColor = false;
 			// 
-			// button_CE
+			// button_CE_N
 			// 
-			this->button_CE->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_CE->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_CE->FlatAppearance->BorderSize = 0;
-			this->button_CE->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_CE->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_CE_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_CE_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_CE_N->FlatAppearance->BorderSize = 0;
+			this->button_CE_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_CE_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_CE->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_CE->Location = System::Drawing::Point(341, 72);
-			this->button_CE->Name = L"button_CE";
-			this->button_CE->Size = System::Drawing::Size(50, 50);
-			this->button_CE->TabIndex = 88;
-			this->button_CE->Text = L"CE";
-			this->button_CE->UseVisualStyleBackColor = false;
+			this->button_CE_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_CE_N->Location = System::Drawing::Point(341, 76);
+			this->button_CE_N->Name = L"button_CE_N";
+			this->button_CE_N->Size = System::Drawing::Size(50, 50);
+			this->button_CE_N->TabIndex = 88;
+			this->button_CE_N->Text = L"CE";
+			this->button_CE_N->UseVisualStyleBackColor = false;
 			// 
-			// button_AC
+			// button_AC_N
 			// 
-			this->button_AC->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_AC->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_AC->FlatAppearance->BorderSize = 0;
-			this->button_AC->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_AC->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_AC_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_AC_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_AC_N->FlatAppearance->BorderSize = 0;
+			this->button_AC_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_AC_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_AC->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_AC->Location = System::Drawing::Point(285, 72);
-			this->button_AC->Name = L"button_AC";
-			this->button_AC->Size = System::Drawing::Size(50, 50);
-			this->button_AC->TabIndex = 87;
-			this->button_AC->Text = L"AC";
-			this->button_AC->UseVisualStyleBackColor = false;
+			this->button_AC_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_AC_N->Location = System::Drawing::Point(285, 76);
+			this->button_AC_N->Name = L"button_AC_N";
+			this->button_AC_N->Size = System::Drawing::Size(50, 50);
+			this->button_AC_N->TabIndex = 87;
+			this->button_AC_N->Text = L"AC";
+			this->button_AC_N->UseVisualStyleBackColor = false;
 			// 
-			// button_COM
+			// button_COM_N
 			// 
-			this->button_COM->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_COM->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_COM->FlatAppearance->BorderSize = 0;
-			this->button_COM->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_COM->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_COM_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_COM_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_COM_N->FlatAppearance->BorderSize = 0;
+			this->button_COM_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_COM_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_COM->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_COM->Location = System::Drawing::Point(285, 128);
-			this->button_COM->Name = L"button_COM";
-			this->button_COM->Size = System::Drawing::Size(50, 50);
-			this->button_COM->TabIndex = 79;
-			this->button_COM->Text = L"COM";
-			this->button_COM->UseVisualStyleBackColor = false;
+			this->button_COM_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_COM_N->Location = System::Drawing::Point(285, 132);
+			this->button_COM_N->Name = L"button_COM_N";
+			this->button_COM_N->Size = System::Drawing::Size(50, 50);
+			this->button_COM_N->TabIndex = 79;
+			this->button_COM_N->Text = L"COM";
+			this->button_COM_N->UseVisualStyleBackColor = false;
 			// 
-			// button_MINUS
+			// button_MINUS_N
 			// 
-			this->button_MINUS->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_MINUS->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_MINUS->FlatAppearance->BorderSize = 0;
-			this->button_MINUS->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_MINUS->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_MINUS_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_MINUS_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_MINUS_N->FlatAppearance->BorderSize = 0;
+			this->button_MINUS_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_MINUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_MINUS->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MINUS->Location = System::Drawing::Point(397, 128);
-			this->button_MINUS->Name = L"button_MINUS";
-			this->button_MINUS->Size = System::Drawing::Size(50, 50);
-			this->button_MINUS->TabIndex = 77;
-			this->button_MINUS->Text = L"-";
-			this->button_MINUS->UseVisualStyleBackColor = false;
+			this->button_MINUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_MINUS_N->Location = System::Drawing::Point(397, 132);
+			this->button_MINUS_N->Name = L"button_MINUS_N";
+			this->button_MINUS_N->Size = System::Drawing::Size(50, 50);
+			this->button_MINUS_N->TabIndex = 77;
+			this->button_MINUS_N->Text = L"-";
+			this->button_MINUS_N->UseVisualStyleBackColor = false;
 			// 
-			// button_PLUS
+			// button_PLUS_N
 			// 
-			this->button_PLUS->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_PLUS->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_PLUS->FlatAppearance->BorderSize = 0;
-			this->button_PLUS->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_PLUS->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_PLUS_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_PLUS_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_PLUS_N->FlatAppearance->BorderSize = 0;
+			this->button_PLUS_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_PLUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_PLUS->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_PLUS->Location = System::Drawing::Point(397, 72);
-			this->button_PLUS->Name = L"button_PLUS";
-			this->button_PLUS->Size = System::Drawing::Size(50, 50);
-			this->button_PLUS->TabIndex = 76;
-			this->button_PLUS->Text = L"+";
-			this->button_PLUS->UseVisualStyleBackColor = false;
+			this->button_PLUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_PLUS_N->Location = System::Drawing::Point(397, 76);
+			this->button_PLUS_N->Name = L"button_PLUS_N";
+			this->button_PLUS_N->Size = System::Drawing::Size(50, 50);
+			this->button_PLUS_N->TabIndex = 76;
+			this->button_PLUS_N->Text = L"+";
+			this->button_PLUS_N->UseVisualStyleBackColor = false;
 			// 
-			// button_4
+			// button_4_N
 			// 
-			this->button_4->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_4->BackColor = System::Drawing::Color::LightGray;
-			this->button_4->FlatAppearance->BorderSize = 0;
-			this->button_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_4->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_4_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_4_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_4_N->FlatAppearance->BorderSize = 0;
+			this->button_4_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_4_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_4->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_4->Location = System::Drawing::Point(453, 128);
-			this->button_4->Name = L"button_4";
-			this->button_4->Size = System::Drawing::Size(50, 50);
-			this->button_4->TabIndex = 74;
-			this->button_4->Text = L"4";
-			this->button_4->UseVisualStyleBackColor = false;
+			this->button_4_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_4_N->Location = System::Drawing::Point(453, 132);
+			this->button_4_N->Name = L"button_4_N";
+			this->button_4_N->Size = System::Drawing::Size(50, 50);
+			this->button_4_N->TabIndex = 74;
+			this->button_4_N->Text = L"4";
+			this->button_4_N->UseVisualStyleBackColor = false;
 			// 
-			// button_7
+			// button_7_N
 			// 
-			this->button_7->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_7->BackColor = System::Drawing::Color::LightGray;
-			this->button_7->FlatAppearance->BorderSize = 0;
-			this->button_7->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_7->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_7_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_7_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_7_N->FlatAppearance->BorderSize = 0;
+			this->button_7_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_7_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_7->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_7->Location = System::Drawing::Point(453, 72);
-			this->button_7->Name = L"button_7";
-			this->button_7->Size = System::Drawing::Size(50, 50);
-			this->button_7->TabIndex = 73;
-			this->button_7->Text = L"7";
-			this->button_7->UseVisualStyleBackColor = false;
+			this->button_7_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_7_N->Location = System::Drawing::Point(453, 76);
+			this->button_7_N->Name = L"button_7_N";
+			this->button_7_N->Size = System::Drawing::Size(50, 50);
+			this->button_7_N->TabIndex = 73;
+			this->button_7_N->Text = L"7";
+			this->button_7_N->UseVisualStyleBackColor = false;
 			// 
-			// button_5
+			// button_5_N
 			// 
-			this->button_5->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_5->BackColor = System::Drawing::Color::LightGray;
-			this->button_5->FlatAppearance->BorderSize = 0;
-			this->button_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_5->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_5_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_5_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_5_N->FlatAppearance->BorderSize = 0;
+			this->button_5_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_5_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_5->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_5->Location = System::Drawing::Point(509, 128);
-			this->button_5->Name = L"button_5";
-			this->button_5->Size = System::Drawing::Size(50, 50);
-			this->button_5->TabIndex = 70;
-			this->button_5->Text = L"5";
-			this->button_5->UseVisualStyleBackColor = false;
+			this->button_5_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_5_N->Location = System::Drawing::Point(509, 132);
+			this->button_5_N->Name = L"button_5_N";
+			this->button_5_N->Size = System::Drawing::Size(50, 50);
+			this->button_5_N->TabIndex = 70;
+			this->button_5_N->Text = L"5";
+			this->button_5_N->UseVisualStyleBackColor = false;
 			// 
-			// button_8
+			// button_8_N
 			// 
-			this->button_8->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_8->BackColor = System::Drawing::Color::LightGray;
-			this->button_8->FlatAppearance->BorderSize = 0;
-			this->button_8->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_8->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_8_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_8_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_8_N->FlatAppearance->BorderSize = 0;
+			this->button_8_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_8_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_8->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_8->Location = System::Drawing::Point(509, 72);
-			this->button_8->Name = L"button_8";
-			this->button_8->Size = System::Drawing::Size(50, 50);
-			this->button_8->TabIndex = 69;
-			this->button_8->Text = L"8";
-			this->button_8->UseVisualStyleBackColor = false;
+			this->button_8_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_8_N->Location = System::Drawing::Point(509, 76);
+			this->button_8_N->Name = L"button_8_N";
+			this->button_8_N->Size = System::Drawing::Size(50, 50);
+			this->button_8_N->TabIndex = 69;
+			this->button_8_N->Text = L"8";
+			this->button_8_N->UseVisualStyleBackColor = false;
 			// 
-			// button_6
+			// button_6_N
 			// 
-			this->button_6->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_6->BackColor = System::Drawing::Color::LightGray;
-			this->button_6->FlatAppearance->BorderSize = 0;
-			this->button_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_6->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_6_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_6_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_6_N->FlatAppearance->BorderSize = 0;
+			this->button_6_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_6_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_6->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_6->Location = System::Drawing::Point(565, 128);
-			this->button_6->Name = L"button_6";
-			this->button_6->Size = System::Drawing::Size(50, 50);
-			this->button_6->TabIndex = 66;
-			this->button_6->Text = L"6";
-			this->button_6->UseVisualStyleBackColor = false;
+			this->button_6_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_6_N->Location = System::Drawing::Point(565, 132);
+			this->button_6_N->Name = L"button_6_N";
+			this->button_6_N->Size = System::Drawing::Size(50, 50);
+			this->button_6_N->TabIndex = 66;
+			this->button_6_N->Text = L"6";
+			this->button_6_N->UseVisualStyleBackColor = false;
 			// 
-			// button_9
+			// button_9_N
 			// 
-			this->button_9->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_9->BackColor = System::Drawing::Color::LightGray;
-			this->button_9->FlatAppearance->BorderSize = 0;
-			this->button_9->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_9->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_9_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_9_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_9_N->FlatAppearance->BorderSize = 0;
+			this->button_9_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_9_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_9->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_9->Location = System::Drawing::Point(565, 72);
-			this->button_9->Name = L"button_9";
-			this->button_9->Size = System::Drawing::Size(50, 50);
-			this->button_9->TabIndex = 65;
-			this->button_9->Text = L"9";
-			this->button_9->UseVisualStyleBackColor = false;
+			this->button_9_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_9_N->Location = System::Drawing::Point(565, 76);
+			this->button_9_N->Name = L"button_9_N";
+			this->button_9_N->Size = System::Drawing::Size(50, 50);
+			this->button_9_N->TabIndex = 65;
+			this->button_9_N->Text = L"9";
+			this->button_9_N->UseVisualStyleBackColor = false;
 			// 
-			// textBox2
+			// additional_screen_N
 			// 
-			this->textBox2->Location = System::Drawing::Point(17, 9);
-			this->textBox2->Multiline = true;
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(598, 29);
-			this->textBox2->TabIndex = 64;
-			this->textBox2->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+			this->additional_screen_N->Location = System::Drawing::Point(17, 9);
+			this->additional_screen_N->Multiline = true;
+			this->additional_screen_N->Name = L"additional_screen_N";
+			this->additional_screen_N->ReadOnly = true;
+			this->additional_screen_N->Size = System::Drawing::Size(598, 29);
+			this->additional_screen_N->TabIndex = 64;
+			this->additional_screen_N->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			// 
-			// button_CHANGE_SIGN
+			// button_CHANGE_SIGN_N
 			// 
-			this->button_CHANGE_SIGN->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_CHANGE_SIGN->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_CHANGE_SIGN->FlatAppearance->BorderSize = 0;
-			this->button_CHANGE_SIGN->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_CHANGE_SIGN->Font = (gcnew System::Drawing::Font(L"Arial", 18.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_CHANGE_SIGN_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_CHANGE_SIGN_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_CHANGE_SIGN_N->FlatAppearance->BorderSize = 0;
+			this->button_CHANGE_SIGN_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_CHANGE_SIGN_N->Font = (gcnew System::Drawing::Font(L"Arial", 18.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_CHANGE_SIGN->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_CHANGE_SIGN->Location = System::Drawing::Point(397, 297);
-			this->button_CHANGE_SIGN->Name = L"button_CHANGE_SIGN";
-			this->button_CHANGE_SIGN->Size = System::Drawing::Size(50, 50);
-			this->button_CHANGE_SIGN->TabIndex = 89;
-			this->button_CHANGE_SIGN->Text = L"+/-";
-			this->button_CHANGE_SIGN->UseVisualStyleBackColor = false;
+			this->button_CHANGE_SIGN_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_CHANGE_SIGN_N->Location = System::Drawing::Point(397, 301);
+			this->button_CHANGE_SIGN_N->Name = L"button_CHANGE_SIGN_N";
+			this->button_CHANGE_SIGN_N->Size = System::Drawing::Size(50, 50);
+			this->button_CHANGE_SIGN_N->TabIndex = 89;
+			this->button_CHANGE_SIGN_N->Text = L"+/-";
+			this->button_CHANGE_SIGN_N->UseVisualStyleBackColor = false;
 			// 
-			// button_LCM
+			// button_LCM_N
 			// 
-			this->button_LCM->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_LCM->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_LCM->FlatAppearance->BorderSize = 0;
-			this->button_LCM->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_LCM->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_LCM_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_LCM_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_LCM_N->FlatAppearance->BorderSize = 0;
+			this->button_LCM_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_LCM_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_LCM->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_LCM->Location = System::Drawing::Point(341, 184);
-			this->button_LCM->Name = L"button_LCM";
-			this->button_LCM->Size = System::Drawing::Size(50, 50);
-			this->button_LCM->TabIndex = 86;
-			this->button_LCM->Text = L"LCM";
-			this->button_LCM->UseVisualStyleBackColor = false;
+			this->button_LCM_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_LCM_N->Location = System::Drawing::Point(341, 188);
+			this->button_LCM_N->Name = L"button_LCM_N";
+			this->button_LCM_N->Size = System::Drawing::Size(50, 50);
+			this->button_LCM_N->TabIndex = 86;
+			this->button_LCM_N->Text = L"LCM";
+			this->button_LCM_N->UseVisualStyleBackColor = false;
 			// 
-			// button_GCD
+			// button_GCD_N
 			// 
-			this->button_GCD->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_GCD->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_GCD->FlatAppearance->BorderSize = 0;
-			this->button_GCD->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_GCD->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_GCD_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_GCD_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_GCD_N->FlatAppearance->BorderSize = 0;
+			this->button_GCD_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_GCD_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_GCD->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_GCD->Location = System::Drawing::Point(285, 184);
-			this->button_GCD->Name = L"button_GCD";
-			this->button_GCD->Size = System::Drawing::Size(50, 50);
-			this->button_GCD->TabIndex = 85;
-			this->button_GCD->Text = L"GCD";
-			this->button_GCD->UseVisualStyleBackColor = false;
+			this->button_GCD_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_GCD_N->Location = System::Drawing::Point(285, 188);
+			this->button_GCD_N->Name = L"button_GCD_N";
+			this->button_GCD_N->Size = System::Drawing::Size(50, 50);
+			this->button_GCD_N->TabIndex = 85;
+			this->button_GCD_N->Text = L"GCD";
+			this->button_GCD_N->UseVisualStyleBackColor = false;
 			// 
-			// button_MOD
+			// button_MOD_N
 			// 
-			this->button_MOD->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_MOD->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_MOD->FlatAppearance->BorderSize = 0;
-			this->button_MOD->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_MOD->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_MOD_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_MOD_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_MOD_N->FlatAppearance->BorderSize = 0;
+			this->button_MOD_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_MOD_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_MOD->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MOD->Location = System::Drawing::Point(341, 240);
-			this->button_MOD->Name = L"button_MOD";
-			this->button_MOD->Size = System::Drawing::Size(50, 50);
-			this->button_MOD->TabIndex = 84;
-			this->button_MOD->Text = L"MOD";
-			this->button_MOD->UseVisualStyleBackColor = false;
+			this->button_MOD_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_MOD_N->Location = System::Drawing::Point(341, 244);
+			this->button_MOD_N->Name = L"button_MOD_N";
+			this->button_MOD_N->Size = System::Drawing::Size(50, 50);
+			this->button_MOD_N->TabIndex = 84;
+			this->button_MOD_N->Text = L"MOD";
+			this->button_MOD_N->UseVisualStyleBackColor = false;
 			// 
-			// button_DIV
+			// button_DIV_N
 			// 
-			this->button_DIV->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_DIV->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_DIV->FlatAppearance->BorderSize = 0;
-			this->button_DIV->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_DIV->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_DIV_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_DIV_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_DIV_N->FlatAppearance->BorderSize = 0;
+			this->button_DIV_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_DIV_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_DIV->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_DIV->Location = System::Drawing::Point(285, 240);
-			this->button_DIV->Name = L"button_DIV";
-			this->button_DIV->Size = System::Drawing::Size(50, 50);
-			this->button_DIV->TabIndex = 83;
-			this->button_DIV->Text = L"DIV";
-			this->button_DIV->UseVisualStyleBackColor = false;
+			this->button_DIV_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_DIV_N->Location = System::Drawing::Point(285, 244);
+			this->button_DIV_N->Name = L"button_DIV_N";
+			this->button_DIV_N->Size = System::Drawing::Size(50, 50);
+			this->button_DIV_N->TabIndex = 83;
+			this->button_DIV_N->Text = L"DIV";
+			this->button_DIV_N->UseVisualStyleBackColor = false;
 			// 
-			// button_PLUSPLUS
+			// button_PLUSPLUS_N
 			// 
-			this->button_PLUSPLUS->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_PLUSPLUS->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_PLUSPLUS->FlatAppearance->BorderSize = 0;
-			this->button_PLUSPLUS->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_PLUSPLUS->Font = (gcnew System::Drawing::Font(L"Arial", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_PLUSPLUS_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_PLUSPLUS_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_PLUSPLUS_N->FlatAppearance->BorderSize = 0;
+			this->button_PLUSPLUS_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_PLUSPLUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_PLUSPLUS->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_PLUSPLUS->Location = System::Drawing::Point(285, 296);
-			this->button_PLUSPLUS->Name = L"button_PLUSPLUS";
-			this->button_PLUSPLUS->Size = System::Drawing::Size(50, 50);
-			this->button_PLUSPLUS->TabIndex = 82;
-			this->button_PLUSPLUS->Text = L"++";
-			this->button_PLUSPLUS->UseVisualStyleBackColor = false;
+			this->button_PLUSPLUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_PLUSPLUS_N->Location = System::Drawing::Point(285, 300);
+			this->button_PLUSPLUS_N->Name = L"button_PLUSPLUS_N";
+			this->button_PLUSPLUS_N->Size = System::Drawing::Size(50, 50);
+			this->button_PLUSPLUS_N->TabIndex = 82;
+			this->button_PLUSPLUS_N->Text = L"++";
+			this->button_PLUSPLUS_N->UseVisualStyleBackColor = false;
 			// 
-			// button_EQUALS
+			// button_EQUALS_N
 			// 
-			this->button_EQUALS->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_EQUALS->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_EQUALS->FlatAppearance->BorderSize = 0;
-			this->button_EQUALS->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_EQUALS->Font = (gcnew System::Drawing::Font(L"Arial", 32.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_EQUALS_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_EQUALS_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_EQUALS_N->FlatAppearance->BorderSize = 0;
+			this->button_EQUALS_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_EQUALS_N->Font = (gcnew System::Drawing::Font(L"Arial", 32.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_EQUALS->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_EQUALS->Location = System::Drawing::Point(453, 296);
-			this->button_EQUALS->Name = L"button_EQUALS";
-			this->button_EQUALS->Size = System::Drawing::Size(162, 50);
-			this->button_EQUALS->TabIndex = 81;
-			this->button_EQUALS->Text = L"=";
-			this->button_EQUALS->UseVisualStyleBackColor = false;
+			this->button_EQUALS_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_EQUALS_N->Location = System::Drawing::Point(453, 300);
+			this->button_EQUALS_N->Name = L"button_EQUALS_N";
+			this->button_EQUALS_N->Size = System::Drawing::Size(162, 50);
+			this->button_EQUALS_N->TabIndex = 81;
+			this->button_EQUALS_N->Text = L"=";
+			this->button_EQUALS_N->UseVisualStyleBackColor = false;
 			// 
-			// button_COMMA
+			// button_COMMA_N
 			// 
-			this->button_COMMA->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_COMMA->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_COMMA->FlatAppearance->BorderSize = 0;
-			this->button_COMMA->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_COMMA->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_COMMA_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_COMMA_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_COMMA_N->FlatAppearance->BorderSize = 0;
+			this->button_COMMA_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_COMMA_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_COMMA->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_COMMA->Location = System::Drawing::Point(397, 241);
-			this->button_COMMA->Name = L"button_COMMA";
-			this->button_COMMA->Size = System::Drawing::Size(50, 50);
-			this->button_COMMA->TabIndex = 80;
-			this->button_COMMA->Text = L",";
-			this->button_COMMA->UseVisualStyleBackColor = false;
+			this->button_COMMA_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_COMMA_N->Location = System::Drawing::Point(397, 245);
+			this->button_COMMA_N->Name = L"button_COMMA_N";
+			this->button_COMMA_N->Size = System::Drawing::Size(50, 50);
+			this->button_COMMA_N->TabIndex = 80;
+			this->button_COMMA_N->Text = L",";
+			this->button_COMMA_N->UseVisualStyleBackColor = false;
 			// 
-			// button_MULT
+			// button_MULT_N
 			// 
-			this->button_MULT->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_MULT->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_MULT->FlatAppearance->BorderSize = 0;
-			this->button_MULT->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_MULT->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_MULT_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_MULT_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_MULT_N->FlatAppearance->BorderSize = 0;
+			this->button_MULT_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_MULT_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_MULT->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MULT->Location = System::Drawing::Point(397, 184);
-			this->button_MULT->Name = L"button_MULT";
-			this->button_MULT->Size = System::Drawing::Size(50, 50);
-			this->button_MULT->TabIndex = 78;
-			this->button_MULT->Text = L"*";
-			this->button_MULT->UseVisualStyleBackColor = false;
+			this->button_MULT_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_MULT_N->Location = System::Drawing::Point(397, 188);
+			this->button_MULT_N->Name = L"button_MULT_N";
+			this->button_MULT_N->Size = System::Drawing::Size(50, 50);
+			this->button_MULT_N->TabIndex = 78;
+			this->button_MULT_N->Text = L"*";
+			this->button_MULT_N->UseVisualStyleBackColor = false;
 			// 
-			// button_1
+			// button_1_N
 			// 
-			this->button_1->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_1->BackColor = System::Drawing::Color::LightGray;
-			this->button_1->FlatAppearance->BorderSize = 0;
-			this->button_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_1->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_1_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_1_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_1_N->FlatAppearance->BorderSize = 0;
+			this->button_1_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_1_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_1->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_1->Location = System::Drawing::Point(453, 184);
-			this->button_1->Name = L"button_1";
-			this->button_1->Size = System::Drawing::Size(50, 50);
-			this->button_1->TabIndex = 75;
-			this->button_1->Text = L"1";
-			this->button_1->UseVisualStyleBackColor = false;
+			this->button_1_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_1_N->Location = System::Drawing::Point(453, 188);
+			this->button_1_N->Name = L"button_1_N";
+			this->button_1_N->Size = System::Drawing::Size(50, 50);
+			this->button_1_N->TabIndex = 75;
+			this->button_1_N->Text = L"1";
+			this->button_1_N->UseVisualStyleBackColor = false;
+			this->button_1_N->Click += gcnew System::EventHandler(this, &MyForm::button_1_N_Click);
 			// 
-			// button_0
+			// button_0_N
 			// 
-			this->button_0->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_0->BackColor = System::Drawing::Color::LightGray;
-			this->button_0->FlatAppearance->BorderSize = 0;
-			this->button_0->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_0->Font = (gcnew System::Drawing::Font(L"Arial", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_0_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_0_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_0_N->FlatAppearance->BorderSize = 0;
+			this->button_0_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_0_N->Font = (gcnew System::Drawing::Font(L"Arial", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_0->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_0->Location = System::Drawing::Point(453, 240);
-			this->button_0->Name = L"button_0";
-			this->button_0->Size = System::Drawing::Size(162, 50);
-			this->button_0->TabIndex = 72;
-			this->button_0->Text = L"0";
-			this->button_0->UseVisualStyleBackColor = false;
+			this->button_0_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_0_N->Location = System::Drawing::Point(453, 244);
+			this->button_0_N->Name = L"button_0_N";
+			this->button_0_N->Size = System::Drawing::Size(162, 50);
+			this->button_0_N->TabIndex = 72;
+			this->button_0_N->Text = L"0";
+			this->button_0_N->UseVisualStyleBackColor = false;
 			// 
-			// button_2
+			// button_2_N
 			// 
-			this->button_2->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_2->BackColor = System::Drawing::Color::LightGray;
-			this->button_2->FlatAppearance->BorderSize = 0;
-			this->button_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_2->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_2_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_2_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_2_N->FlatAppearance->BorderSize = 0;
+			this->button_2_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_2_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_2->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_2->Location = System::Drawing::Point(509, 184);
-			this->button_2->Name = L"button_2";
-			this->button_2->Size = System::Drawing::Size(50, 50);
-			this->button_2->TabIndex = 71;
-			this->button_2->Text = L"2";
-			this->button_2->UseVisualStyleBackColor = false;
+			this->button_2_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_2_N->Location = System::Drawing::Point(509, 188);
+			this->button_2_N->Name = L"button_2_N";
+			this->button_2_N->Size = System::Drawing::Size(50, 50);
+			this->button_2_N->TabIndex = 71;
+			this->button_2_N->Text = L"2";
+			this->button_2_N->UseVisualStyleBackColor = false;
 			// 
-			// button_MINUSMINUS
+			// button_MINUSMINUS_N
 			// 
-			this->button_MINUSMINUS->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_MINUSMINUS->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_MINUSMINUS->FlatAppearance->BorderSize = 0;
-			this->button_MINUSMINUS->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_MINUSMINUS->Font = (gcnew System::Drawing::Font(L"Arial", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_MINUSMINUS_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_MINUSMINUS_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_MINUSMINUS_N->FlatAppearance->BorderSize = 0;
+			this->button_MINUSMINUS_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_MINUSMINUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_MINUSMINUS->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MINUSMINUS->Location = System::Drawing::Point(341, 296);
-			this->button_MINUSMINUS->Name = L"button_MINUSMINUS";
-			this->button_MINUSMINUS->Size = System::Drawing::Size(50, 50);
-			this->button_MINUSMINUS->TabIndex = 68;
-			this->button_MINUSMINUS->Text = L"--";
-			this->button_MINUSMINUS->UseVisualStyleBackColor = false;
+			this->button_MINUSMINUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_MINUSMINUS_N->Location = System::Drawing::Point(341, 300);
+			this->button_MINUSMINUS_N->Name = L"button_MINUSMINUS_N";
+			this->button_MINUSMINUS_N->Size = System::Drawing::Size(50, 50);
+			this->button_MINUSMINUS_N->TabIndex = 68;
+			this->button_MINUSMINUS_N->Text = L"--";
+			this->button_MINUSMINUS_N->UseVisualStyleBackColor = false;
 			// 
-			// button_3
+			// button_3_N
 			// 
-			this->button_3->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_3->BackColor = System::Drawing::Color::LightGray;
-			this->button_3->FlatAppearance->BorderSize = 0;
-			this->button_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_3->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_3_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_3_N->BackColor = System::Drawing::Color::LightGray;
+			this->button_3_N->FlatAppearance->BorderSize = 0;
+			this->button_3_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_3_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_3->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_3->Location = System::Drawing::Point(565, 184);
-			this->button_3->Name = L"button_3";
-			this->button_3->Size = System::Drawing::Size(50, 50);
-			this->button_3->TabIndex = 67;
-			this->button_3->Text = L"3";
-			this->button_3->UseVisualStyleBackColor = false;
+			this->button_3_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_3_N->Location = System::Drawing::Point(565, 188);
+			this->button_3_N->Name = L"button_3_N";
+			this->button_3_N->Size = System::Drawing::Size(50, 50);
+			this->button_3_N->TabIndex = 67;
+			this->button_3_N->Text = L"3";
+			this->button_3_N->UseVisualStyleBackColor = false;
 			// 
 			// MyForm
 			// 
@@ -801,131 +833,21 @@ namespace colloquiumDM {
 
 		}
 #pragma endregion
-		// кнопка 0
-private: System::Void button_0_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(0);
-	textBox2->Text = System::Convert::ToString(0);
-}
-		// кнопка 1
-private: System::Void button_1_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(1);
-	textBox2->Text = System::Convert::ToString(1);
-}
-	   // кнопка 2
-private: System::Void button_2_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(2);
-	textBox2->Text = System::Convert::ToString(2);
-}
-	   // кнопка 3
-private: System::Void button_3_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(3);
-	textBox2->Text = System::Convert::ToString(3);
-}
-	   // кнопка 4
-private: System::Void button_4_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(4);
-	textBox2->Text = System::Convert::ToString(4);
-}
-	   // кнопка 5
-private: System::Void button_5_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(5);
-	textBox2->Text = System::Convert::ToString(5);
-}
-	   // кнопка 6
-private: System::Void button_6_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(6);
-	textBox2->Text = System::Convert::ToString(6);
-}
-	   // кнопка 7
-private: System::Void button_7_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(7);
-	textBox2->Text = System::Convert::ToString(7);
-}
-	   // кнопка 8
-private: System::Void button_8_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(8);
-	textBox2->Text = System::Convert::ToString(8);
-}
-	   // кнопка 9
-private: System::Void button_9_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString(9);
-	textBox2->Text = System::Convert::ToString(9);
-}
-	   // кнопка +
-private: System::Void button_PLUS_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("+");
-}
-	   // кнопка -
-private: System::Void button_MINUS_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("-");
-}
-	   // кнопка *
-private: System::Void button_MULT_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("*");
-}
-	   // кнопка =
-private: System::Void button_EQUALS_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox1->Text = System::Convert::ToString("RESULT");
-	textBox2->Text = System::Convert::ToString("=");
-	//textBox2->Text = System::Convert::ToString("RESULT");
-}
-	   // кнопка +/-
-private: System::Void button_CHANGE_SIGN_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("+/-");
-}
-	   // кнопка ++
-private: System::Void button_PLUSPLUS_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("++");
-}
-	   // кнопка --
-private: System::Void button_MINUSMINUS_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("--");
-}
-	   // кнопка сравнения
-private: System::Void button_COM_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("COM");
-}
-	   // кнопка возведения в степень 10
-private: System::Void button_10DEGREE_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("10^X");
-}
-	   // кнопка НОД
-private: System::Void button_GCD_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("GCD");
-}
-	   // кнопка НОК
-private: System::Void button_LCM_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("LCM");
-}
-	   // кнопка целой части деления
-private: System::Void button_DIV_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("DIV");
-}
-	   // кнопка остатка от деления
-private: System::Void button_MOD_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("MOD");
-}
-private: System::Void button_COMMA_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString(",");
-}
-	   // кнопка удалить все
-private: System::Void button_AC_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("DELETE ALL");
-}
-	   // кнопка удалить последний символ
-private: System::Void button_CE_Click(System::Object^ sender, System::EventArgs^ e) {
-	textBox2->Text = System::Convert::ToString("DELETE 1 SIGN");
-}
+		
 
-private: System::Void textBox1_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
-	// здесь вводятся только цифры
-	if ((e->KeyChar >= '0') && (e->KeyChar <= '9'))   //если вводятся цифры от 0 до 9 то "далее"
+private: System::Void main_screen_N_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
+	if ((e->KeyChar >= '0') && (e->KeyChar <= '9') 
+		|| (e->KeyChar == '\b')		//backspace
+		|| (e->KeyChar == '+') 
+		|| (e->KeyChar == '-') 
+		|| (e->KeyChar == '*') 
+		|| (e->KeyChar == '/')) 
 		return;
 	e->Handled = true;
 }
-	// здесь вводятся цифры, знаки, буквы
-private: System::Void textBox2_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
+private: System::Void button_1_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 }
-
 };
 }
