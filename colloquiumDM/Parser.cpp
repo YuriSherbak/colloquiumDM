@@ -35,6 +35,11 @@ N ParseStr_N(string str)
 	return N();
 }
 
+N ParseStr_N(System::String^ str)
+{
+	return N();
+}
+
 Z ReadNumber_Z(string str)
 {
 	vector <short int> num;

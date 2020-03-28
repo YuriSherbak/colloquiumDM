@@ -1,4 +1,5 @@
 #pragma once
+#include "Parser.h"
 
 namespace colloquiumDM {
 
@@ -913,7 +914,9 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 			break;
 		case '=':
 			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
-			main_screen_N->Text = "";
+			//обработка результата
+			//вывод на экран
+			//main_screen_N->Text = ParseStr_N(additional_screen_N->Text).toString();
 			break;
 		default:
 			break;
