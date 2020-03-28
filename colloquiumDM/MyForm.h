@@ -290,33 +290,30 @@ namespace colloquiumDM {
 			// 
 			// tabPage4
 			// 
-			this->tabPage4->Location = System::Drawing::Point(4, 25);
-			this->tabPage4->Margin = System::Windows::Forms::Padding(4);
+			this->tabPage4->Location = System::Drawing::Point(4, 22);
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(4);
-			this->tabPage4->Size = System::Drawing::Size(793, 449);
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+			this->tabPage4->Size = System::Drawing::Size(633, 356);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Многочлены";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// tabPage3
 			// 
-			this->tabPage3->Location = System::Drawing::Point(4, 25);
-			this->tabPage3->Margin = System::Windows::Forms::Padding(4);
+			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(4);
-			this->tabPage3->Size = System::Drawing::Size(793, 449);
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+			this->tabPage3->Size = System::Drawing::Size(633, 356);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Рациональные числа";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// tabPage2
 			// 
-			this->tabPage2->Location = System::Drawing::Point(4, 25);
-			this->tabPage2->Margin = System::Windows::Forms::Padding(4);
+			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(4);
-			this->tabPage2->Size = System::Drawing::Size(793, 449);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+			this->tabPage2->Size = System::Drawing::Size(633, 356);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Целые числа";
 			this->tabPage2->UseVisualStyleBackColor = true;
@@ -327,11 +324,10 @@ namespace colloquiumDM {
 			this->TabControl->Controls->Add(this->tabPage2);
 			this->TabControl->Controls->Add(this->tabPage3);
 			this->TabControl->Controls->Add(this->tabPage4);
-			this->TabControl->Location = System::Drawing::Point(-2, -5);
-			this->TabControl->Margin = System::Windows::Forms::Padding(4);
+			this->TabControl->Location = System::Drawing::Point(-2, -4);
 			this->TabControl->Name = L"TabControl";
 			this->TabControl->SelectedIndex = 0;
-			this->TabControl->Size = System::Drawing::Size(801, 478);
+			this->TabControl->Size = System::Drawing::Size(641, 382);
 			this->TabControl->TabIndex = 64;
 			// 
 			// tabPage1
@@ -365,22 +361,20 @@ namespace colloquiumDM {
 			this->tabPage1->Controls->Add(this->button_2_N);
 			this->tabPage1->Controls->Add(this->button_MINUSMINUS_N);
 			this->tabPage1->Controls->Add(this->button_3_N);
-			this->tabPage1->Location = System::Drawing::Point(4, 25);
-			this->tabPage1->Margin = System::Windows::Forms::Padding(4);
+			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(4);
-			this->tabPage1->Size = System::Drawing::Size(793, 449);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+			this->tabPage1->Size = System::Drawing::Size(633, 356);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Натуральные числа";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
 			// main_screen_N
 			// 
-			this->main_screen_N->Location = System::Drawing::Point(21, 46);
-			this->main_screen_N->Margin = System::Windows::Forms::Padding(4);
+			this->main_screen_N->Location = System::Drawing::Point(17, 37);
 			this->main_screen_N->Multiline = true;
 			this->main_screen_N->Name = L"main_screen_N";
-			this->main_screen_N->Size = System::Drawing::Size(746, 35);
+			this->main_screen_N->Size = System::Drawing::Size(598, 29);
 			this->main_screen_N->TabIndex = 92;
 			this->main_screen_N->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			this->main_screen_N->TextChanged += gcnew System::EventHandler(this, &MyForm::main_screen_N_TextChanged);
@@ -392,10 +386,9 @@ namespace colloquiumDM {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->label1->Location = System::Drawing::Point(18, 88);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(14, 70);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(59, 330);
+			this->label1->Size = System::Drawing::Size(47, 255);
 			this->label1->TabIndex = 91;
 			this->label1->Text = L"З\r\nД\r\nЕ\r\nС\r\nЬ\r\nО\r\nП\r\nИ\r\nС\r\nА\r\nН\r\nИ\r\nЕ\r\nФУНК\r\nЦИЙ";
 			// 
@@ -408,10 +401,9 @@ namespace colloquiumDM {
 			this->button_10DEGREE_N->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_10DEGREE_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_10DEGREE_N->Location = System::Drawing::Point(426, 165);
-			this->button_10DEGREE_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_10DEGREE_N->Location = System::Drawing::Point(341, 132);
 			this->button_10DEGREE_N->Name = L"button_10DEGREE_N";
-			this->button_10DEGREE_N->Size = System::Drawing::Size(62, 62);
+			this->button_10DEGREE_N->Size = System::Drawing::Size(50, 50);
 			this->button_10DEGREE_N->TabIndex = 90;
 			this->button_10DEGREE_N->Text = L"10^x";
 			this->button_10DEGREE_N->UseVisualStyleBackColor = false;
@@ -425,10 +417,9 @@ namespace colloquiumDM {
 			this->button_CE_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_CE_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_CE_N->Location = System::Drawing::Point(426, 95);
-			this->button_CE_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_CE_N->Location = System::Drawing::Point(341, 76);
 			this->button_CE_N->Name = L"button_CE_N";
-			this->button_CE_N->Size = System::Drawing::Size(62, 62);
+			this->button_CE_N->Size = System::Drawing::Size(50, 50);
 			this->button_CE_N->TabIndex = 88;
 			this->button_CE_N->Text = L"CE";
 			this->button_CE_N->UseVisualStyleBackColor = false;
@@ -442,10 +433,9 @@ namespace colloquiumDM {
 			this->button_AC_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_AC_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_AC_N->Location = System::Drawing::Point(356, 95);
-			this->button_AC_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_AC_N->Location = System::Drawing::Point(285, 76);
 			this->button_AC_N->Name = L"button_AC_N";
-			this->button_AC_N->Size = System::Drawing::Size(62, 62);
+			this->button_AC_N->Size = System::Drawing::Size(50, 50);
 			this->button_AC_N->TabIndex = 87;
 			this->button_AC_N->Text = L"AC";
 			this->button_AC_N->UseVisualStyleBackColor = false;
@@ -459,10 +449,9 @@ namespace colloquiumDM {
 			this->button_COM_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_COM_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_COM_N->Location = System::Drawing::Point(356, 165);
-			this->button_COM_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_COM_N->Location = System::Drawing::Point(285, 132);
 			this->button_COM_N->Name = L"button_COM_N";
-			this->button_COM_N->Size = System::Drawing::Size(62, 62);
+			this->button_COM_N->Size = System::Drawing::Size(50, 50);
 			this->button_COM_N->TabIndex = 79;
 			this->button_COM_N->Text = L"COM";
 			this->button_COM_N->UseVisualStyleBackColor = false;
@@ -476,10 +465,9 @@ namespace colloquiumDM {
 			this->button_MINUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_MINUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MINUS_N->Location = System::Drawing::Point(496, 165);
-			this->button_MINUS_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_MINUS_N->Location = System::Drawing::Point(397, 132);
 			this->button_MINUS_N->Name = L"button_MINUS_N";
-			this->button_MINUS_N->Size = System::Drawing::Size(62, 62);
+			this->button_MINUS_N->Size = System::Drawing::Size(50, 50);
 			this->button_MINUS_N->TabIndex = 77;
 			this->button_MINUS_N->Text = L"-";
 			this->button_MINUS_N->UseVisualStyleBackColor = false;
@@ -494,10 +482,9 @@ namespace colloquiumDM {
 			this->button_PLUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_PLUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_PLUS_N->Location = System::Drawing::Point(496, 95);
-			this->button_PLUS_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_PLUS_N->Location = System::Drawing::Point(397, 76);
 			this->button_PLUS_N->Name = L"button_PLUS_N";
-			this->button_PLUS_N->Size = System::Drawing::Size(62, 62);
+			this->button_PLUS_N->Size = System::Drawing::Size(50, 50);
 			this->button_PLUS_N->TabIndex = 76;
 			this->button_PLUS_N->Text = L"+";
 			this->button_PLUS_N->UseVisualStyleBackColor = false;
@@ -512,10 +499,9 @@ namespace colloquiumDM {
 			this->button_4_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_4_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_4_N->Location = System::Drawing::Point(566, 165);
-			this->button_4_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_4_N->Location = System::Drawing::Point(453, 132);
 			this->button_4_N->Name = L"button_4_N";
-			this->button_4_N->Size = System::Drawing::Size(62, 62);
+			this->button_4_N->Size = System::Drawing::Size(50, 50);
 			this->button_4_N->TabIndex = 74;
 			this->button_4_N->Text = L"4";
 			this->button_4_N->UseVisualStyleBackColor = false;
@@ -530,10 +516,9 @@ namespace colloquiumDM {
 			this->button_7_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_7_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_7_N->Location = System::Drawing::Point(566, 95);
-			this->button_7_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_7_N->Location = System::Drawing::Point(453, 76);
 			this->button_7_N->Name = L"button_7_N";
-			this->button_7_N->Size = System::Drawing::Size(62, 62);
+			this->button_7_N->Size = System::Drawing::Size(50, 50);
 			this->button_7_N->TabIndex = 73;
 			this->button_7_N->Text = L"7";
 			this->button_7_N->UseVisualStyleBackColor = false;
@@ -548,10 +533,9 @@ namespace colloquiumDM {
 			this->button_5_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_5_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_5_N->Location = System::Drawing::Point(636, 165);
-			this->button_5_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_5_N->Location = System::Drawing::Point(509, 132);
 			this->button_5_N->Name = L"button_5_N";
-			this->button_5_N->Size = System::Drawing::Size(62, 62);
+			this->button_5_N->Size = System::Drawing::Size(50, 50);
 			this->button_5_N->TabIndex = 70;
 			this->button_5_N->Text = L"5";
 			this->button_5_N->UseVisualStyleBackColor = false;
@@ -566,10 +550,9 @@ namespace colloquiumDM {
 			this->button_8_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_8_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_8_N->Location = System::Drawing::Point(636, 95);
-			this->button_8_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_8_N->Location = System::Drawing::Point(509, 76);
 			this->button_8_N->Name = L"button_8_N";
-			this->button_8_N->Size = System::Drawing::Size(62, 62);
+			this->button_8_N->Size = System::Drawing::Size(50, 50);
 			this->button_8_N->TabIndex = 69;
 			this->button_8_N->Text = L"8";
 			this->button_8_N->UseVisualStyleBackColor = false;
@@ -584,10 +567,9 @@ namespace colloquiumDM {
 			this->button_6_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_6_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_6_N->Location = System::Drawing::Point(706, 165);
-			this->button_6_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_6_N->Location = System::Drawing::Point(565, 132);
 			this->button_6_N->Name = L"button_6_N";
-			this->button_6_N->Size = System::Drawing::Size(62, 62);
+			this->button_6_N->Size = System::Drawing::Size(50, 50);
 			this->button_6_N->TabIndex = 66;
 			this->button_6_N->Text = L"6";
 			this->button_6_N->UseVisualStyleBackColor = false;
@@ -602,10 +584,9 @@ namespace colloquiumDM {
 			this->button_9_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_9_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_9_N->Location = System::Drawing::Point(706, 95);
-			this->button_9_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_9_N->Location = System::Drawing::Point(565, 76);
 			this->button_9_N->Name = L"button_9_N";
-			this->button_9_N->Size = System::Drawing::Size(62, 62);
+			this->button_9_N->Size = System::Drawing::Size(50, 50);
 			this->button_9_N->TabIndex = 65;
 			this->button_9_N->Text = L"9";
 			this->button_9_N->UseVisualStyleBackColor = false;
@@ -613,12 +594,11 @@ namespace colloquiumDM {
 			// 
 			// additional_screen_N
 			// 
-			this->additional_screen_N->Location = System::Drawing::Point(21, 11);
-			this->additional_screen_N->Margin = System::Windows::Forms::Padding(4);
+			this->additional_screen_N->Location = System::Drawing::Point(17, 9);
 			this->additional_screen_N->Multiline = true;
 			this->additional_screen_N->Name = L"additional_screen_N";
 			this->additional_screen_N->ReadOnly = true;
-			this->additional_screen_N->Size = System::Drawing::Size(746, 35);
+			this->additional_screen_N->Size = System::Drawing::Size(598, 29);
 			this->additional_screen_N->TabIndex = 64;
 			this->additional_screen_N->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
 			// 
@@ -631,10 +611,9 @@ namespace colloquiumDM {
 			this->button_CHANGE_SIGN_N->Font = (gcnew System::Drawing::Font(L"Arial", 18.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_CHANGE_SIGN_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_CHANGE_SIGN_N->Location = System::Drawing::Point(496, 376);
-			this->button_CHANGE_SIGN_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_CHANGE_SIGN_N->Location = System::Drawing::Point(397, 301);
 			this->button_CHANGE_SIGN_N->Name = L"button_CHANGE_SIGN_N";
-			this->button_CHANGE_SIGN_N->Size = System::Drawing::Size(62, 62);
+			this->button_CHANGE_SIGN_N->Size = System::Drawing::Size(50, 50);
 			this->button_CHANGE_SIGN_N->TabIndex = 89;
 			this->button_CHANGE_SIGN_N->Text = L"+/-";
 			this->button_CHANGE_SIGN_N->UseVisualStyleBackColor = false;
@@ -648,10 +627,9 @@ namespace colloquiumDM {
 			this->button_LCM_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_LCM_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_LCM_N->Location = System::Drawing::Point(426, 235);
-			this->button_LCM_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_LCM_N->Location = System::Drawing::Point(341, 188);
 			this->button_LCM_N->Name = L"button_LCM_N";
-			this->button_LCM_N->Size = System::Drawing::Size(62, 62);
+			this->button_LCM_N->Size = System::Drawing::Size(50, 50);
 			this->button_LCM_N->TabIndex = 86;
 			this->button_LCM_N->Text = L"LCM";
 			this->button_LCM_N->UseVisualStyleBackColor = false;
@@ -665,10 +643,9 @@ namespace colloquiumDM {
 			this->button_GCD_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_GCD_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_GCD_N->Location = System::Drawing::Point(356, 235);
-			this->button_GCD_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_GCD_N->Location = System::Drawing::Point(285, 188);
 			this->button_GCD_N->Name = L"button_GCD_N";
-			this->button_GCD_N->Size = System::Drawing::Size(62, 62);
+			this->button_GCD_N->Size = System::Drawing::Size(50, 50);
 			this->button_GCD_N->TabIndex = 85;
 			this->button_GCD_N->Text = L"GCD";
 			this->button_GCD_N->UseVisualStyleBackColor = false;
@@ -682,10 +659,9 @@ namespace colloquiumDM {
 			this->button_MOD_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_MOD_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MOD_N->Location = System::Drawing::Point(426, 305);
-			this->button_MOD_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_MOD_N->Location = System::Drawing::Point(341, 244);
 			this->button_MOD_N->Name = L"button_MOD_N";
-			this->button_MOD_N->Size = System::Drawing::Size(62, 62);
+			this->button_MOD_N->Size = System::Drawing::Size(50, 50);
 			this->button_MOD_N->TabIndex = 84;
 			this->button_MOD_N->Text = L"MOD";
 			this->button_MOD_N->UseVisualStyleBackColor = false;
@@ -699,10 +675,9 @@ namespace colloquiumDM {
 			this->button_DIV_N->Font = (gcnew System::Drawing::Font(L"Arial", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_DIV_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_DIV_N->Location = System::Drawing::Point(496, 306);
-			this->button_DIV_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_DIV_N->Location = System::Drawing::Point(397, 245);
 			this->button_DIV_N->Name = L"button_DIV_N";
-			this->button_DIV_N->Size = System::Drawing::Size(62, 62);
+			this->button_DIV_N->Size = System::Drawing::Size(50, 50);
 			this->button_DIV_N->TabIndex = 83;
 			this->button_DIV_N->Text = L"/";
 			this->button_DIV_N->UseVisualStyleBackColor = false;
@@ -717,10 +692,9 @@ namespace colloquiumDM {
 			this->button_PLUSPLUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_PLUSPLUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_PLUSPLUS_N->Location = System::Drawing::Point(356, 375);
-			this->button_PLUSPLUS_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_PLUSPLUS_N->Location = System::Drawing::Point(285, 300);
 			this->button_PLUSPLUS_N->Name = L"button_PLUSPLUS_N";
-			this->button_PLUSPLUS_N->Size = System::Drawing::Size(62, 62);
+			this->button_PLUSPLUS_N->Size = System::Drawing::Size(50, 50);
 			this->button_PLUSPLUS_N->TabIndex = 82;
 			this->button_PLUSPLUS_N->Text = L"++";
 			this->button_PLUSPLUS_N->UseVisualStyleBackColor = false;
@@ -734,13 +708,13 @@ namespace colloquiumDM {
 			this->button_EQUALS_N->Font = (gcnew System::Drawing::Font(L"Arial", 32.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_EQUALS_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_EQUALS_N->Location = System::Drawing::Point(566, 375);
-			this->button_EQUALS_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_EQUALS_N->Location = System::Drawing::Point(453, 300);
 			this->button_EQUALS_N->Name = L"button_EQUALS_N";
-			this->button_EQUALS_N->Size = System::Drawing::Size(202, 62);
+			this->button_EQUALS_N->Size = System::Drawing::Size(162, 50);
 			this->button_EQUALS_N->TabIndex = 81;
 			this->button_EQUALS_N->Text = L"=";
 			this->button_EQUALS_N->UseVisualStyleBackColor = false;
+			this->button_EQUALS_N->Click += gcnew System::EventHandler(this, &MyForm::button_EQUALS_N_Click);
 			// 
 			// button_COMMA_N
 			// 
@@ -751,10 +725,9 @@ namespace colloquiumDM {
 			this->button_COMMA_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_COMMA_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_COMMA_N->Location = System::Drawing::Point(356, 305);
-			this->button_COMMA_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_COMMA_N->Location = System::Drawing::Point(285, 244);
 			this->button_COMMA_N->Name = L"button_COMMA_N";
-			this->button_COMMA_N->Size = System::Drawing::Size(62, 62);
+			this->button_COMMA_N->Size = System::Drawing::Size(50, 50);
 			this->button_COMMA_N->TabIndex = 80;
 			this->button_COMMA_N->Text = L",";
 			this->button_COMMA_N->UseVisualStyleBackColor = false;
@@ -768,10 +741,9 @@ namespace colloquiumDM {
 			this->button_MULT_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_MULT_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MULT_N->Location = System::Drawing::Point(496, 235);
-			this->button_MULT_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_MULT_N->Location = System::Drawing::Point(397, 188);
 			this->button_MULT_N->Name = L"button_MULT_N";
-			this->button_MULT_N->Size = System::Drawing::Size(62, 62);
+			this->button_MULT_N->Size = System::Drawing::Size(50, 50);
 			this->button_MULT_N->TabIndex = 78;
 			this->button_MULT_N->Text = L"*";
 			this->button_MULT_N->UseVisualStyleBackColor = false;
@@ -786,10 +758,9 @@ namespace colloquiumDM {
 			this->button_1_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_1_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_1_N->Location = System::Drawing::Point(566, 235);
-			this->button_1_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_1_N->Location = System::Drawing::Point(453, 188);
 			this->button_1_N->Name = L"button_1_N";
-			this->button_1_N->Size = System::Drawing::Size(62, 62);
+			this->button_1_N->Size = System::Drawing::Size(50, 50);
 			this->button_1_N->TabIndex = 75;
 			this->button_1_N->Text = L"1";
 			this->button_1_N->UseVisualStyleBackColor = false;
@@ -804,10 +775,9 @@ namespace colloquiumDM {
 			this->button_0_N->Font = (gcnew System::Drawing::Font(L"Arial", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_0_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_0_N->Location = System::Drawing::Point(566, 305);
-			this->button_0_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_0_N->Location = System::Drawing::Point(453, 244);
 			this->button_0_N->Name = L"button_0_N";
-			this->button_0_N->Size = System::Drawing::Size(202, 62);
+			this->button_0_N->Size = System::Drawing::Size(162, 50);
 			this->button_0_N->TabIndex = 72;
 			this->button_0_N->Text = L"0";
 			this->button_0_N->UseVisualStyleBackColor = false;
@@ -822,10 +792,9 @@ namespace colloquiumDM {
 			this->button_2_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_2_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_2_N->Location = System::Drawing::Point(636, 235);
-			this->button_2_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_2_N->Location = System::Drawing::Point(509, 188);
 			this->button_2_N->Name = L"button_2_N";
-			this->button_2_N->Size = System::Drawing::Size(62, 62);
+			this->button_2_N->Size = System::Drawing::Size(50, 50);
 			this->button_2_N->TabIndex = 71;
 			this->button_2_N->Text = L"2";
 			this->button_2_N->UseVisualStyleBackColor = false;
@@ -840,10 +809,9 @@ namespace colloquiumDM {
 			this->button_MINUSMINUS_N->Font = (gcnew System::Drawing::Font(L"Arial", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_MINUSMINUS_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_MINUSMINUS_N->Location = System::Drawing::Point(426, 375);
-			this->button_MINUSMINUS_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_MINUSMINUS_N->Location = System::Drawing::Point(341, 300);
 			this->button_MINUSMINUS_N->Name = L"button_MINUSMINUS_N";
-			this->button_MINUSMINUS_N->Size = System::Drawing::Size(62, 62);
+			this->button_MINUSMINUS_N->Size = System::Drawing::Size(50, 50);
 			this->button_MINUSMINUS_N->TabIndex = 68;
 			this->button_MINUSMINUS_N->Text = L"--";
 			this->button_MINUSMINUS_N->UseVisualStyleBackColor = false;
@@ -857,10 +825,9 @@ namespace colloquiumDM {
 			this->button_3_N->Font = (gcnew System::Drawing::Font(L"Arial", 26.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_3_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_3_N->Location = System::Drawing::Point(706, 235);
-			this->button_3_N->Margin = System::Windows::Forms::Padding(4);
+			this->button_3_N->Location = System::Drawing::Point(565, 188);
 			this->button_3_N->Name = L"button_3_N";
-			this->button_3_N->Size = System::Drawing::Size(62, 62);
+			this->button_3_N->Size = System::Drawing::Size(50, 50);
 			this->button_3_N->TabIndex = 67;
 			this->button_3_N->Text = L"3";
 			this->button_3_N->UseVisualStyleBackColor = false;
@@ -870,19 +837,18 @@ namespace colloquiumDM {
 			// 
 			this->lbl_info->AutoSize = true;
 			this->lbl_info->ForeColor = System::Drawing::Color::DarkRed;
-			this->lbl_info->Location = System::Drawing::Point(289, 476);
-			this->lbl_info->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->lbl_info->Location = System::Drawing::Point(231, 381);
 			this->lbl_info->Name = L"lbl_info";
-			this->lbl_info->Size = System::Drawing::Size(209, 17);
+			this->lbl_info->Size = System::Drawing::Size(162, 13);
 			this->lbl_info->TabIndex = 65;
 			this->lbl_info->Text = L"Информационные сообщения!";
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(120, 120);
+			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			this->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			this->ClientSize = System::Drawing::Size(798, 508);
+			this->ClientSize = System::Drawing::Size(638, 406);
 			this->Controls->Add(this->lbl_info);
 			this->Controls->Add(this->TabControl);
 			this->Margin = System::Windows::Forms::Padding(2);
@@ -909,13 +875,16 @@ private: System::Void main_screen_N_KeyPress(System::Object^ sender, System::Win
 private: bool checkMainScreenNotEmpty() {
 	return main_screen_N->Text->Length > 0;
 }
+private: bool checkAdditionalScreenNotEmpty() {
+	return additional_screen_N->Text->Length > 0;
+}
 private: void printNullMainScreen() {
 	lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 }
 private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	TextBox^ txtMain = (TextBox^)sender;
 
-	lbl_info->Text = "";
+	lbl_info->Text = "";	
 
 	if (checkMainScreenNotEmpty()) {
 		int length = main_screen_N->Text->Length;		
@@ -935,6 +904,10 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 			break;
 		case '/':
 			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
+		case '=':
+			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
 			main_screen_N->Text = "";
 			break;
 		default:
@@ -1021,6 +994,17 @@ private: System::Void button_DIV_N_Click(System::Object^ sender, System::EventAr
 		printNullMainScreen();
 	}
 }
+private: System::Void button_EQUALS_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (checkMainScreenNotEmpty() && checkAdditionalScreenNotEmpty()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
+	else {
+		printNullMainScreen();
+	}
+}
+
+//-------------------------------------------------------------------------------
+
 };
 }
-//-------------------------------------------------------------------------------
