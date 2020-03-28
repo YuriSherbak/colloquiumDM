@@ -18,22 +18,22 @@
     <ClCompile Include="MyForm.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.cpp">
+    <ClCompile Include="Number.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.cpp">
+    <ClCompile Include="N.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.cpp">
+    <ClCompile Include="Z.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.cpp">
+    <ClCompile Include="Q.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.cpp">
+    <ClCompile Include="Polynom.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.cpp">
+    <ClCompile Include="Parser.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,22 +41,22 @@
     <ClInclude Include="MyForm.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.h">
+    <ClInclude Include="Number.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.h">
+    <ClInclude Include="N.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.h">
+    <ClInclude Include="Z.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.h">
+    <ClInclude Include="Q.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.h">
+    <ClInclude Include="Polynom.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.h">
+    <ClInclude Include="Parser.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

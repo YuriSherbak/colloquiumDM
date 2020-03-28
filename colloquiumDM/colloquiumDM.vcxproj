@@ -118,21 +118,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.cpp" />
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.cpp" />
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.cpp" />
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.cpp" />
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.cpp" />
-    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Number.cpp" />
+    <ClCompile Include="N.cpp" />
+    <ClCompile Include="Q.cpp" />
+    <ClCompile Include="Polynom.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Z.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.h" />
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.h" />
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.h" />
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.h" />
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.h" />
-    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Polynom.h" />
+    <ClInclude Include="Q.h" />
+    <ClInclude Include="Z.h" />
+    <ClInclude Include="N.h" />
+    <ClInclude Include="Number.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
