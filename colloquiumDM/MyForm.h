@@ -884,9 +884,20 @@ private: bool checkmainScreenFirstIsNotNull() {
 private: bool checkAdditionalScreenNotEmpty() {
 	return additional_screen_N->Text->Length > 0;
 }
+private: bool checkAdditionalScreenLastIsNotEqually() {
+	if (checkAdditionalScreenNotEmpty()) {
+		int length = additional_screen_N->Text->Length;
+		return additional_screen_N->Text[length - 1] != '=';
+	}
+	return false;	
+}
 private: void printNullMainScreen() {
 	lbl_info->Text = "ѕуста€ строка! ¬ведите какое-нибудь число!";
 }
+private: void printNullOperation() {
+	lbl_info->Text = "¬ведите операцию!";
+}
+
 private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	TextBox^ txtMain = (TextBox^)sender;
 
@@ -1028,7 +1039,12 @@ private: System::Void button_DIV_N_Click(System::Object^ sender, System::EventAr
 private: System::Void button_EQUALS_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
 	if (checkMainScreenNotEmpty() && checkAdditionalScreenNotEmpty()) {
-		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+		if (checkAdditionalScreenLastIsNotEqually()) {
+			main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+		}
+		else {
+			printNullOperation();
+		}
 	}
 	else {
 		printNullMainScreen();
