@@ -118,9 +118,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.cpp" />
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.cpp" />
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.cpp" />
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.cpp" />
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.cpp" />
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.h" />
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.h" />
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.h" />
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.h" />
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.h" />
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

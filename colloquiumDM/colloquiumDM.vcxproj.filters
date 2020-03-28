@@ -18,10 +18,46 @@
     <ClCompile Include="MyForm.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
       <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\N.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Number.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Parser.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Polynom.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Q.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\lor-s\OneDrive\Рабочий стол\123\Z.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
