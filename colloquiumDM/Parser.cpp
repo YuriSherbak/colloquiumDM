@@ -2,47 +2,67 @@
 
 enum mathOp {plus = '+', minus = '-', mul = '*', diiv = '//'};
 
-N ReadNumber_N(string str, int from, int to)
+System::String^ WriteNumber_N(N num)
 {
-	mathOp sign;
+	System::String^ str = "";
+
+	for (int i = 0; i < num.size(); i++)
+	{
+		str = System::String::Concat(str, num.getNumber()[i].ToString());
+	}
+
+	return str;
+}
+
+N ReadNumber_N(System::String^ str, int from, int to)
+{
 	vector <short int> num;
 	for(int i = from; i < to; i++)
 	{
 		num.push_back((int)str[i] - 48);
-		i++;
 	}
 	return N(num);
 }
 
-int SearchSign(string str)
+int SearchSign(System::String^ str)
 {
-	mathOp sign;
-	for (int i = 0; i < str.size(); i++)
+	for (int i = 0; i < str->Length; i++)
 	{
-		if (str[i] == sign)
+		if (str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*')
 			return i;
 	}
 	return -1;
 }
 
-N ParseStr_N(string str)
-{
-	str.pop_back();
-	int positionSign = SearchSign(str);
-	N num1 = ReadNumber_N(str, 0, positionSign);
-	N num2 = ReadNumber_N(str, positionSign + 1, str.size());
-	char sign = str[positionSign];
-	return N();
-}
-
 N ParseStr_N(System::String^ str)
 {
-	return N();
+	if (str[str->Length - 1] == '=')
+	{
+		str = str->Remove(str->Length - 1);
+	}
+
+	int positionSign = SearchSign(str);
+	N num1 = ReadNumber_N(str, 0, positionSign);
+	N num2 = ReadNumber_N(str, positionSign + 1, str->Length);
+	char sign = str[positionSign];
+
+	N num3;
+	switch (sign)
+	{
+	case '+':
+	{
+		num3 = num1.ADD_NN_N(num2);
+		break;
+	}
+	default:
+		break;
+	}
+	return num3;
 }
 
-Z ReadNumber_Z(string str)
+Z ReadNumber_Z(System::String^ str)
 {
-	vector <short int> num;
+	/*vector <short int> num;
 	bool pos = true;
 
 	for (int i = 0; i < str.size(); i++)
@@ -54,7 +74,7 @@ Z ReadNumber_Z(string str)
 		}
 
 		num.push_back((int)str[i] - 48);
-	}
+	}*/
 
-	return Z(num, pos);
+	return Z();
 }

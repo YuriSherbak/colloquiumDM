@@ -15,7 +15,7 @@ class N
 {
 private:
 	//массив цифр, из которых состоит число
-	vector <short int> number;
+	vector <short int> number;	
 
 public:
 	N(vector <short int>);
@@ -25,6 +25,8 @@ public:
 
 	//массив цифр, из которых состоит число
 	vector <short int> getNumber();
+
+	int size();
 
 	//Преобразование в строку
 	string toString();

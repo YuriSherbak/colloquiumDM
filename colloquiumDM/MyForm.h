@@ -893,6 +893,8 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 	lbl_info->Text = "";	
 
 	if (checkMainScreenNotEmpty()) {
+		N number;
+
 		int length = main_screen_N->Text->Length;		
 		switch (main_screen_N->Text[length - 1])
 		{
@@ -916,7 +918,8 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
 			//обработка результата
 			//вывод на экран
-			//main_screen_N->Text = ParseStr_N(additional_screen_N->Text).toString();
+			number = ParseStr_N(additional_screen_N->Text);
+			main_screen_N->Text = WriteNumber_N(number);
 			break;
 		default:
 			break;

@@ -1,18 +1,21 @@
-#ifndef PARSER
-#define PARSER
+#ifndef PARSER_H
+#define PARSER_H
 
 #include "Polynom.h"
 using namespace std;
-//Считание и обработка строки.
 
-//считывание натурального числа
-N ReadNumber_N(string);
+//Считывание натурального числа
+N ReadNumber_N(System::String^, int, int);
 
-//считывние целого числа
-Z ReadNumber_Z(string);
+//Запись натурального числа в строку
+System::String^ WriteNumber_N(N);
 
-N ParseStr_N(string);
+//Определение местоположения математического знака в строке
+int SearchSign(System::String^);
 
+//Считывание и обработка строки с натуральными числами.
 N ParseStr_N(System::String^);
+
+
 
 #endif //PARSER_H#pragma once

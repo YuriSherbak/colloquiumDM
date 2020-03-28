@@ -15,6 +15,11 @@ vector<short int> N::getNumber()
 	return number;
 }
 
+int N::size()
+{
+	return number.size();
+}
+
 
 string N::toString()
 {
