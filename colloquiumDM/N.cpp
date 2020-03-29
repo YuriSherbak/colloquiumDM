@@ -132,6 +132,15 @@ N N::ADD_NN_N(N b)
 	return z;
 }
 
+N N::SUB_1N_N()
+{
+	N b;
+	b.number = number;
+	N one = N();
+	one.number[0] += 1;
+	return b.SUB_NN_N(one);
+}
+
 N N::SUB_NN_N(N b)
 {
 	N a = *this;

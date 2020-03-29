@@ -876,12 +876,7 @@ private: void printNullOperation() {
 private: void printNotGoodOperation() {
 	lbl_info->Text = "Неверная операция!";
 }
-private: bool checkAnotherOperationForNotEqually() {
-	return additional_screen_N->Text->EndsWith("++")
-		|| additional_screen_N->Text->EndsWith("--")
-		|| additional_screen_N->Text->StartsWith("НОД")
-		|| additional_screen_N->Text->StartsWith("НОК");
-}
+
 private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	TextBox^ txtMain = (TextBox^)sender;
 
@@ -899,13 +894,19 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 
 			if (additional_screen_N->Text->EndsWith("++")) {
 				additional_screen_N->Text = String::Concat(additional_screen_N->Text, "=");
-				//number = ParseStr_N(additional_screen_N->Text);
-				//main_screen_N->Text = WriteNumber_N(number);
+				number = ParseStr_N(additional_screen_N->Text);
+				main_screen_N->Text = WriteNumber_N(number);
 			}				
 			break;
 		case '-':
 			additional_screen_N->Text = main_screen_N->Text;
 			main_screen_N->Text = "";
+			if (additional_screen_N->Text->EndsWith("--")) {
+				additional_screen_N->Text = String::Concat(additional_screen_N->Text, "=");
+				number = ParseStr_N(additional_screen_N->Text);
+				main_screen_N->Text = WriteNumber_N(number);
+			}
+
 			break;
 		case '*':
 			additional_screen_N->Text = main_screen_N->Text;
@@ -1046,6 +1047,9 @@ private: System::Void button_EQUALS_N_Click(System::Object^ sender, System::Even
 private: System::Void button_CHANGE_SIGN_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button_AC_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	main_screen_N->Text = "";
+	additional_screen_N->Text = "";
+	
 }
 private: System::Void button_PLUSPLUS_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
@@ -1057,8 +1061,18 @@ private: System::Void button_PLUSPLUS_N_Click(System::Object^ sender, System::Ev
 	}
 }
 private: System::Void button_COM_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (main_screen_N->Text->Length > 0)
+		main_screen_N->Text = main_screen_N->Text->Remove(main_screen_N->Text->Length - 1);
 }
 private: System::Void button_MINUSMINUS_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (checkMainScreenNotEmpty()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
+	else {
+		printNullMainScreen();
+	}
 }
 private: System::Void button_LCM_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
