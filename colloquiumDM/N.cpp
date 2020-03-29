@@ -134,7 +134,42 @@ N N::ADD_NN_N(N b)
 
 N N::SUB_NN_N(N b)
 {
-	return N();
+	N a = *this;
+	N result;
+
+	if (a.COM_NN_D(b) == 0) return (result);
+
+	for (int i = 0; i <= a.number.size() - 1; i++)
+	{
+		result.number.push_back(0);
+	}
+
+	for (int i = b.number.size(); i < a.number.size(); i++)
+	{
+		auto it = b.number.begin();
+		b.number.insert(it, 0);
+	}
+
+	int carry = 0;
+	for (int i = b.number.size() - 1; i >= 0; --i)
+	{
+		result.number[i] = a.number[i] - b.number[i] - carry;
+		carry = 0;
+		if (result.number[i] < 0)
+		{
+			result.number[i] += 10;
+			carry = 1;
+		}
+	}
+	result.number.pop_back();
+
+	while (result.number[0] == 0)
+	{
+		auto iter = result.number.begin();
+		result.number.erase(iter);
+	}
+
+	return N(result);
 }
 
 N N::MUL_ND_N(int d)
@@ -179,18 +214,48 @@ N N::MUL_Nk_N(int k)
 
 N N::MUL_NN_N(N b)
 {
-	return N();
+	N a;
+	a.number = number;
+
+	N res1, res2;
+
+	int ch = 0;
+	if (a.number[0] == 0 || b.number[0] == 0) {
+
+
+	}
+	else {
+
+		for (int i = b.number.size() - 1; i >= 0; i--)
+		{
+			res2 = a.MUL_ND_N(b.number[i]);
+
+			res2 = res2.MUL_Nk_N(ch);
+			ch++;
+
+			res1 = res1.ADD_NN_N(res2);
+
+		}
+
+	}
+	return res1;
 }
 
 N N::SUB_NDN_N(N b, int d)
 {
-	return N();
+	N a;
+	N c;
+	a.number = number;
+	b = b.MUL_ND_N(d);
+	c = a.SUB_NN_N(b);
+	return c;
 }
 
-N N::DIV_NN_Dk(N b, int k)
+N DIV_NN_Dk(N b, int k)
 {
 	return N();
 }
+
 
 N N::DIV_NN_N(N b)
 {
