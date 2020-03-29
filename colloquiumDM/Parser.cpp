@@ -52,12 +52,18 @@ N ParseStr_N(System::String^ str)
 	case '+':
 	{
 		num3 = num1.ADD_NN_N(num2);
-		break;
+		return num3;
 	}
+	case '-':
+		if (num1.COM_NN_D(num2) != 1)
+		{
+			num3 = num1.SUB_NN_N(num2);
+			return num3;
+		}
 	default:
 		break;
 	}
-	return num3;
+	return N();
 }
 
 Z ReadNumber_Z(System::String^ str)

@@ -901,7 +901,7 @@ namespace colloquiumDM {
 		
 //------------------------- Main Screen --------------------------------------
 private: System::Void main_screen_N_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
-	if ((e->KeyChar >= '0') && (e->KeyChar <= '9') 
+	if (e->KeyChar >= '0' && checkmainScreenFirstIsNotNull() && (e->KeyChar <= '9')
 		|| (e->KeyChar == '\b')		//backspace
 		|| ((e->KeyChar == '+') || (e->KeyChar == '-') || (e->KeyChar == '*') || (e->KeyChar == '/')) && checkMainScreenNotEmpty()
 			) 

@@ -251,7 +251,7 @@ N N::SUB_NDN_N(N b, int d)
 	return c;
 }
 
-N DIV_NN_Dk(N b, int k)
+N N::DIV_NN_Dk(N b, int k)
 {
 	return N();
 }
