@@ -95,7 +95,7 @@ N N::ADD_1N_N()
 			b.number.insert(b.number.begin(), 1);
 		}
 	}
-	return N(b);
+	return b;
 }
 
 N N::ADD_NN_N(N b)
@@ -129,7 +129,7 @@ N N::ADD_NN_N(N b)
 	}
 	z.number.pop_back();
 
-	return N(z);
+	return z;
 }
 
 N N::SUB_NN_N(N b)
@@ -160,7 +160,7 @@ N N::MUL_ND_N(int d)
 	{
 		number1.number.insert(number1.number.begin(), pr);
 	}
-	return N(number1);
+	return number1;
 }
 
 N N::MUL_Nk_N(int k)
@@ -174,7 +174,7 @@ N N::MUL_Nk_N(int k)
 		number1.number.push_back(0);
 	}
 
-	return N(number1);
+	return number1;
 }
 
 N N::MUL_NN_N(N b)
