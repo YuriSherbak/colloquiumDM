@@ -60,6 +60,11 @@ N ParseStr_N(System::String^ str)
 			num3 = num1.SUB_NN_N(num2);
 			return num3;
 		}
+	case '*':
+		{
+		num3 = num1.MUL_NN_N(num2);
+		return num3;
+		}
 	default:
 		break;
 	}
