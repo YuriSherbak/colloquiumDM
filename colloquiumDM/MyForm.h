@@ -867,16 +867,10 @@ private: bool checkAdditionalScreenLastIsNotEqually() {
 	}
 	return false;	
 }
-private: void printNullMainScreen() {
-	lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
+private: bool checkGoodOperationNokAndNod() {
+	return (additional_screen_N->Text->StartsWith("НОД") || additional_screen_N->Text->StartsWith("НОК"))
+		&& additional_screen_N->Text->EndsWith(",") && main_screen_N->Text->Length > 0;
 }
-private: void printNullOperation() {
-	lbl_info->Text = "Введите операцию!";
-}
-private: void printNotGoodOperation() {
-	lbl_info->Text = "Неверная операция!";
-}
-
 private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	TextBox^ txtMain = (TextBox^)sender;
 
@@ -906,7 +900,6 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 				number = ParseStr_N(additional_screen_N->Text);
 				main_screen_N->Text = WriteNumber_N(number);
 			}
-
 			break;
 		case '*':
 			additional_screen_N->Text = main_screen_N->Text;
@@ -920,8 +913,20 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
 			//обработка результата
 			//вывод на экран
-			number = ParseStr_N(additional_screen_N->Text);
-			main_screen_N->Text = WriteNumber_N(number);
+			//number = ParseStr_N(additional_screen_N->Text);
+			//main_screen_N->Text = WriteNumber_N(number);
+			break;
+		case '(':
+			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
+		case ',':
+			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
+			main_screen_N->Text = "";
+			break;
+		case ')':
+			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
+			main_screen_N->Text = "";
 			break;
 		default:
 			break;
@@ -996,7 +1001,7 @@ private: System::Void button_PLUS_N_Click(System::Object^ sender, System::EventA
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
 private: System::Void button_MINUS_N_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1005,7 +1010,7 @@ private: System::Void button_MINUS_N_Click(System::Object^ sender, System::Event
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
 
@@ -1015,7 +1020,7 @@ private: System::Void button_MULT_N_Click(System::Object^ sender, System::EventA
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
 private: System::Void button_DIV_N_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1024,26 +1029,30 @@ private: System::Void button_DIV_N_Click(System::Object^ sender, System::EventAr
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
 private: System::Void button_EQUALS_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
 	if (checkMainScreenNotEmpty() && checkAdditionalScreenNotEmpty()) {
-		if (checkAdditionalScreenLastIsNotEqually()) {			
-			main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+		if (checkAdditionalScreenLastIsNotEqually()) {		
+			if (checkGoodOperationNokAndNod())
+			{
+				main_screen_N->Text = String::Concat(main_screen_N->Text, ")" + btn->Text);
+			}
+			else {
+				main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+			}
 		}
 		else {
-			printNullOperation();
+			lbl_info->Text = "Введите операцию!";
 		}
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
-
 //-------------------------------------------------------------------------------
-
 private: System::Void button_CHANGE_SIGN_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button_AC_N_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1057,7 +1066,7 @@ private: System::Void button_PLUSPLUS_N_Click(System::Object^ sender, System::Ev
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
 private: System::Void button_COM_N_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1071,16 +1080,39 @@ private: System::Void button_MINUSMINUS_N_Click(System::Object^ sender, System::
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
 	}
 	else {
-		printNullMainScreen();
+		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 	}
 }
-private: System::Void button_LCM_N_Click(System::Object^ sender, System::EventArgs^ e) {
+private: bool chechAnotherOperation() {
+	return additional_screen_N->Text->EndsWith("+")
+		|| additional_screen_N->Text->EndsWith("-")
+		|| additional_screen_N->Text->EndsWith("*")
+		|| additional_screen_N->Text->EndsWith("/")
+		|| additional_screen_N->Text->EndsWith("%")
+		|| additional_screen_N->Text->EndsWith("^");
 }
+private: System::Void button_LCM_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (!chechAnotherOperation() && main_screen_N->Text->Length == 0)
+	{
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text + "(");		
+	}
+	else
+	{
+		lbl_info->Text = "Неверная операция!";
+	}
+;}
 private: System::Void button_GCD_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button_MOD_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button_COMMA_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if ((additional_screen_N->Text->StartsWith("НОД(") || additional_screen_N->Text->StartsWith("НОК("))
+		&& main_screen_N->Text->Length>0)
+	{
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
 }
 private: System::Void button_10DEGREE_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
