@@ -262,18 +262,78 @@ N N::SUB_NDN_N(N b, int d)
 
 N N::DIV_NN_Dk(N b, int k)
 {
-	return N();
+	N a;
+	a.number = number;
+	N result;
+
+	int t = a.COM_NN_D(b);
+	if (t == 1)
+		return result;
+	else if (t == 0)
+		result.number[0] = 1;
+	else
+	{
+		N c;
+		c.number[0] = a.number[0];
+		for (int i = 1; i < b.number.size(); i++)
+			c.number.push_back(a.number[i]);
+
+		if (b.COM_NN_D(c) == 2)
+			c.number.push_back(a.number[b.number.size()]);
+		else if (b.COM_NN_D(c) == 0)
+			result.number[0] = 1;
+
+		int i = 0;
+		while (c.COM_NN_D(b) != 1)
+		{
+			i++;
+			c = c.SUB_NN_N(b);
+		}
+		result.number[0] = i;
+	}
+
+	return result.MUL_Nk_N(k - 1);
+
 }
 
 
 N N::DIV_NN_N(N b)
+
 {
-	return N();
+	N rezult;
+	N a;
+	a.number = number;
+	int i;
+	i = a.number.size() - b.number.size() + 1;
+	rezult.number.clear(); rezult.number.push_back(0);
+	while (a.COM_NN_D(b) != 1)
+	{
+		N p;
+		N mul;
+		p = a.DIV_NN_Dk(b, i);
+		while (a.COM_NN_D(p.MUL_NN_N(b)) == 1)
+		{
+			i--;
+			p.number.pop_back();
+		}
+		rezult = rezult.ADD_NN_N(p);
+		mul = b.MUL_NN_N(p);
+
+		a = a.SUB_NN_N(mul);
+		if (a.COM_NN_D(b) == 1) break;
+		i--;
+	}
+	return N(rezult);
 }
 
 N N::MOD_NN_N(N b)
 {
-	return N();
+	N a;
+	N p;
+	a.number = number;
+	p = a.DIV_NN_N(b);
+	p = p.MUL_NN_N(b);
+	return N(a.SUB_NN_N(p));
 }
 
 N N::GCF_NN_N(N b)

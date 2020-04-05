@@ -35,7 +35,7 @@ int SearchSign(System::String^ str)
 {
 	for (int i = 0; i < str->Length; i++)
 	{
-		if (str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*')
+		if (str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*' || str[i] == '%')
 			return i;
 	}
 	return -1;
@@ -101,6 +101,18 @@ N ParseStr_N(System::String^ str)
 		case '*':
 		{
 			result = num1.MUL_NN_N(num2);
+			return result;
+		}
+
+		case '/':
+		{
+			result = num1.DIV_NN_N(num2);
+			return result;
+		}
+
+		case '%':
+		{
+			result = num1.MOD_NN_N(num2);
 			return result;
 		}
 		default:

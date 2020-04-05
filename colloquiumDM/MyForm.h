@@ -909,12 +909,16 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 			additional_screen_N->Text = main_screen_N->Text;
 			main_screen_N->Text = "";
 			break;
+		case '%':
+			additional_screen_N->Text = main_screen_N->Text;
+			main_screen_N->Text = "";
+			break;
 		case '=':
 			additional_screen_N->Text = String::Concat(additional_screen_N->Text, main_screen_N->Text);
 			//обработка результата
 			//вывод на экран
-			//number = ParseStr_N(additional_screen_N->Text);
-			//main_screen_N->Text = WriteNumber_N(number);
+			number = ParseStr_N(additional_screen_N->Text);
+			main_screen_N->Text = WriteNumber_N(number);
 			break;
 		case '(':
 			additional_screen_N->Text = main_screen_N->Text;
@@ -1105,6 +1109,13 @@ private: System::Void button_LCM_N_Click(System::Object^ sender, System::EventAr
 private: System::Void button_GCD_N_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button_MOD_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (checkMainScreenNotEmpty()) {
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
+	}
+	else {
+		lbl_info->Text = "ѕуста€ строка! ¬ведите какое-нибудь число!";
+	}
 }
 private: System::Void button_COMMA_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
