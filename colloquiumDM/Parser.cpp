@@ -1,7 +1,5 @@
 #include "Parser.h"
 
-enum mathOp {plus = '+', minus = '-', mul = '*', diiv = '//'};
-
 bool checkAnotherOperationForNotEqually(System::String^ str) {
 	return str->EndsWith("++")
 		|| str->EndsWith("--")
@@ -35,7 +33,7 @@ int SearchSign(System::String^ str)
 {
 	for (int i = 0; i < str->Length; i++)
 	{
-		if (str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*' || str[i] == '%')
+		if (str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*' || str[i] == '%' || str[i] == ',')
 			return i;
 	}
 	return -1;
@@ -67,13 +65,32 @@ N ParseStr_N(System::String^ str)
 				return N();
 		}
 	}
-	else if (str->EndsWith("мнд")) {
-
+	else if (str->StartsWith("мнй"))
+	{
+		for (int i = 0; i < str->Length; i++)
+		{
+			if (str[i] == ')' || str[i] == '(')
+			{
+				str = str->Remove(str[i]);
+			}
+		}
+		N num2 = ReadNumber_N(str, positionSign + 1, str->Length);
+		result = num1.LCM_NN_N(num2);
+		return result;
 	}
-	else if (str->EndsWith("мнй")) {
-
+	else if (str->StartsWith("мнд"))
+	{
+		for (int i = 0; i < str->Length; i++)
+		{
+			if (str[i] == ')' || str[i] == '(')
+			{
+				str = str->Remove(str[i]);
+			}
+		}
+		N num2 = ReadNumber_N(str, positionSign + 1, str->Length);
+		result = num1.GCF_NN_N(num2);
+		return result;
 	}
-
 	else 
 	{
 		N num2 = ReadNumber_N(str, positionSign + 1, str->Length);
