@@ -102,14 +102,18 @@ namespace colloquiumDM {
 	private: System::Windows::Forms::TextBox^ main_screen_N;
 	private: System::Windows::Forms::TextBox^ additional_screen_N;
 	private: System::Windows::Forms::Label^ lbl_info;
-	private: System::Windows::Forms::Button^ button_COM_N;
+	private: System::Windows::Forms::Button^ button_CLEAN_N;
+
 	private: System::Windows::Forms::Button^ button_MINUSMINUS_N;
 	private: System::Windows::Forms::TextBox^ main_screen_Z;
 
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Button^ button_10DEGREE_Z;
+	private: System::Windows::Forms::Button^ button_AC_Z;
 
-	private: System::Windows::Forms::Button^ button_CLEAR_Z;
+
+
+
 
 	private: System::Windows::Forms::Button^ button_DELETE_Z;
 	private: System::Windows::Forms::Button^ button_MINUS_Z;
@@ -191,6 +195,8 @@ private: System::Windows::Forms::Button^ button47;
 private: System::Windows::Forms::Button^ button48;
 private: System::Windows::Forms::Button^ button50;
 private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
+private: System::Windows::Forms::Button^ button_ABS_Z;
+
 
 
 
@@ -376,7 +382,7 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->main_screen_Z = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button_10DEGREE_Z = (gcnew System::Windows::Forms::Button());
-			this->button_CLEAR_Z = (gcnew System::Windows::Forms::Button());
+			this->button_AC_Z = (gcnew System::Windows::Forms::Button());
 			this->button_DELETE_Z = (gcnew System::Windows::Forms::Button());
 			this->button_MINUS_Z = (gcnew System::Windows::Forms::Button());
 			this->button_PLUS_Z = (gcnew System::Windows::Forms::Button());
@@ -406,7 +412,7 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button_10DEGREE_N = (gcnew System::Windows::Forms::Button());
 			this->button_AC_N = (gcnew System::Windows::Forms::Button());
-			this->button_COM_N = (gcnew System::Windows::Forms::Button());
+			this->button_CLEAN_N = (gcnew System::Windows::Forms::Button());
 			this->button_MINUS_N = (gcnew System::Windows::Forms::Button());
 			this->button_PLUS_N = (gcnew System::Windows::Forms::Button());
 			this->button_4_N = (gcnew System::Windows::Forms::Button());
@@ -430,6 +436,7 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->button_MINUSMINUS_N = (gcnew System::Windows::Forms::Button());
 			this->button_3_N = (gcnew System::Windows::Forms::Button());
 			this->lbl_info = (gcnew System::Windows::Forms::Label());
+			this->button_ABS_Z = (gcnew System::Windows::Forms::Button());
 			this->tabPage3->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			this->TabControl->SuspendLayout();
@@ -917,11 +924,12 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->button_ABS_Z);
 			this->tabPage2->Controls->Add(this->button_CHANGESIGN_Z);
 			this->tabPage2->Controls->Add(this->main_screen_Z);
 			this->tabPage2->Controls->Add(this->label2);
 			this->tabPage2->Controls->Add(this->button_10DEGREE_Z);
-			this->tabPage2->Controls->Add(this->button_CLEAR_Z);
+			this->tabPage2->Controls->Add(this->button_AC_Z);
 			this->tabPage2->Controls->Add(this->button_DELETE_Z);
 			this->tabPage2->Controls->Add(this->button_MINUS_Z);
 			this->tabPage2->Controls->Add(this->button_PLUS_Z);
@@ -1010,22 +1018,22 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->button_10DEGREE_Z->UseVisualStyleBackColor = false;
 			this->button_10DEGREE_Z->Click += gcnew System::EventHandler(this, &MyForm::button_10DEGREE_Z_Click);
 			// 
-			// button_CLEAR_Z
+			// button_AC_Z
 			// 
-			this->button_CLEAR_Z->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_CLEAR_Z->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_CLEAR_Z->FlatAppearance->BorderSize = 0;
-			this->button_CLEAR_Z->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_CLEAR_Z->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_AC_Z->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_AC_Z->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_AC_Z->FlatAppearance->BorderSize = 0;
+			this->button_AC_Z->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_AC_Z->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_CLEAR_Z->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_CLEAR_Z->Location = System::Drawing::Point(285, 76);
-			this->button_CLEAR_Z->Name = L"button_CLEAR_Z";
-			this->button_CLEAR_Z->Size = System::Drawing::Size(106, 50);
-			this->button_CLEAR_Z->TabIndex = 116;
-			this->button_CLEAR_Z->Text = L"CLEAR";
-			this->button_CLEAR_Z->UseVisualStyleBackColor = false;
-			this->button_CLEAR_Z->Click += gcnew System::EventHandler(this, &MyForm::button_CLEAR_Z_Click);
+			this->button_AC_Z->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_AC_Z->Location = System::Drawing::Point(285, 76);
+			this->button_AC_Z->Name = L"button_AC_Z";
+			this->button_AC_Z->Size = System::Drawing::Size(50, 50);
+			this->button_AC_Z->TabIndex = 116;
+			this->button_AC_Z->Text = L"DEL";
+			this->button_AC_Z->UseVisualStyleBackColor = false;
+			this->button_AC_Z->Click += gcnew System::EventHandler(this, &MyForm::button_CLEAR_Z_Click);
 			// 
 			// button_DELETE_Z
 			// 
@@ -1036,7 +1044,7 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->button_DELETE_Z->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_DELETE_Z->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_DELETE_Z->Location = System::Drawing::Point(397, 76);
+			this->button_DELETE_Z->Location = System::Drawing::Point(341, 76);
 			this->button_DELETE_Z->Name = L"button_DELETE_Z";
 			this->button_DELETE_Z->Size = System::Drawing::Size(50, 50);
 			this->button_DELETE_Z->TabIndex = 108;
@@ -1429,7 +1437,7 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->tabPage1->Controls->Add(this->label1);
 			this->tabPage1->Controls->Add(this->button_10DEGREE_N);
 			this->tabPage1->Controls->Add(this->button_AC_N);
-			this->tabPage1->Controls->Add(this->button_COM_N);
+			this->tabPage1->Controls->Add(this->button_CLEAN_N);
 			this->tabPage1->Controls->Add(this->button_MINUS_N);
 			this->tabPage1->Controls->Add(this->button_PLUS_N);
 			this->tabPage1->Controls->Add(this->button_4_N);
@@ -1513,26 +1521,26 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->button_AC_N->Name = L"button_AC_N";
 			this->button_AC_N->Size = System::Drawing::Size(106, 50);
 			this->button_AC_N->TabIndex = 87;
-			this->button_AC_N->Text = L"CLEAR";
+			this->button_AC_N->Text = L"DELETE";
 			this->button_AC_N->UseVisualStyleBackColor = false;
 			this->button_AC_N->Click += gcnew System::EventHandler(this, &MyForm::button_AC_N_Click);
 			// 
-			// button_COM_N
+			// button_CLEAN_N
 			// 
-			this->button_COM_N->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_COM_N->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_COM_N->FlatAppearance->BorderSize = 0;
-			this->button_COM_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_COM_N->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_CLEAN_N->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_CLEAN_N->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_CLEAN_N->FlatAppearance->BorderSize = 0;
+			this->button_CLEAN_N->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_CLEAN_N->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_COM_N->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_COM_N->Location = System::Drawing::Point(397, 76);
-			this->button_COM_N->Name = L"button_COM_N";
-			this->button_COM_N->Size = System::Drawing::Size(50, 50);
-			this->button_COM_N->TabIndex = 79;
-			this->button_COM_N->Text = L"<-";
-			this->button_COM_N->UseVisualStyleBackColor = false;
-			this->button_COM_N->Click += gcnew System::EventHandler(this, &MyForm::button_COM_N_Click);
+			this->button_CLEAN_N->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_CLEAN_N->Location = System::Drawing::Point(397, 76);
+			this->button_CLEAN_N->Name = L"button_CLEAN_N";
+			this->button_CLEAN_N->Size = System::Drawing::Size(50, 50);
+			this->button_CLEAN_N->TabIndex = 79;
+			this->button_CLEAN_N->Text = L"<-";
+			this->button_CLEAN_N->UseVisualStyleBackColor = false;
+			this->button_CLEAN_N->Click += gcnew System::EventHandler(this, &MyForm::button_COM_N_Click);
 			// 
 			// button_MINUS_N
 			// 
@@ -1910,6 +1918,23 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 			this->lbl_info->Size = System::Drawing::Size(162, 13);
 			this->lbl_info->TabIndex = 65;
 			this->lbl_info->Text = L"Информационные сообщения!";
+			// 
+			// button_ABS_Z
+			// 
+			this->button_ABS_Z->Anchor = System::Windows::Forms::AnchorStyles::None;
+			this->button_ABS_Z->BackColor = System::Drawing::SystemColors::Menu;
+			this->button_ABS_Z->FlatAppearance->BorderSize = 0;
+			this->button_ABS_Z->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button_ABS_Z->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button_ABS_Z->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->button_ABS_Z->Location = System::Drawing::Point(397, 76);
+			this->button_ABS_Z->Name = L"button_ABS_Z";
+			this->button_ABS_Z->Size = System::Drawing::Size(50, 50);
+			this->button_ABS_Z->TabIndex = 121;
+			this->button_ABS_Z->Text = L"ABS";
+			this->button_ABS_Z->UseVisualStyleBackColor = false;
+			this->button_ABS_Z->Click += gcnew System::EventHandler(this, &MyForm::button_ABS_Z_Click);
 			// 
 			// MyForm
 			// 
@@ -2316,52 +2341,43 @@ private: System::Void main_screen_Z_TextChanged(System::Object^ sender, System::
 //----------------------------BUTTONS FOR Z---------------------------------------//
 private: System::Void button_1_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
-
 private: System::Void button_2_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_3_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_4_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_5_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_6_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_7_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_8_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull()) {
+	if (checkmainScreen_Z_FirstIsNotNull())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
 }
 private: System::Void button_9_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
@@ -2383,30 +2399,24 @@ private: System::Void button_PLUS_Z_Click(System::Object^ sender, System::EventA
 }
 private: System::Void button_MINUS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkMainScreen_Z_NotEmpty()) {
+	if (checkMainScreen_Z_NotEmpty())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
-	else {
+	else
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
-	}
 }
 private: System::Void button_MULT_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkMainScreen_Z_NotEmpty()) {
+	if (checkMainScreen_Z_NotEmpty())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
-	else {
+	else
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
-	}
 }
 private: System::Void button_DIV_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkMainScreen_Z_NotEmpty()) {
+	if (checkMainScreen_Z_NotEmpty())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
-	}
-	else {
+	else
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
-	}
 }
 private: System::Void button_EQUALS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
@@ -2432,7 +2442,6 @@ private: System::Void button_DELETE_Z_Click(System::Object^ sender, System::Even
 	Button^ btn = (Button^)sender;
 	if (main_screen_Z->Text->Length > 0)
 		main_screen_Z->Text = main_screen_Z->Text->Remove(main_screen_Z->Text->Length - 1);
-
 }
 private: System::Void button_PLUSPLUS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
@@ -2447,7 +2456,6 @@ private: System::Void button_MINUSMINUS_Z_Click(System::Object^ sender, System::
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
 	else
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
-
 }
 
 private: bool checkAnotherOperation_Z() {
@@ -2457,6 +2465,14 @@ private: bool checkAnotherOperation_Z() {
 		|| additional_screen_Z->Text->EndsWith("/")
 		|| additional_screen_Z->Text->EndsWith("%")
 		|| additional_screen_Z->Text->EndsWith("^");
+}
+
+private: System::Void button_ABS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (!checkAnotherOperation_Z() && main_screen_Z->Text->Length == 0)
+		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text + "(");
+	else
+		lbl_info->Text = "Неверная операция!";
 }
 
 private: System::Void button_LCM_Z_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2495,5 +2511,6 @@ private: System::Void button_10DEGREE_Z_Click(System::Object^ sender, System::Ev
 }
 private: System::Void button_CHANGESIGN_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+
 };
 }
