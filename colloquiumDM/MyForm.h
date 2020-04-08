@@ -195,7 +195,7 @@ private: System::Windows::Forms::Button^ button47;
 private: System::Windows::Forms::Button^ button48;
 private: System::Windows::Forms::Button^ button50;
 private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
-private: System::Windows::Forms::Button^ button_ABS_Z;
+
 
 
 
@@ -436,7 +436,6 @@ private: System::Windows::Forms::Button^ button_ABS_Z;
 			this->button_MINUSMINUS_N = (gcnew System::Windows::Forms::Button());
 			this->button_3_N = (gcnew System::Windows::Forms::Button());
 			this->lbl_info = (gcnew System::Windows::Forms::Label());
-			this->button_ABS_Z = (gcnew System::Windows::Forms::Button());
 			this->tabPage3->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			this->TabControl->SuspendLayout();
@@ -924,7 +923,6 @@ private: System::Windows::Forms::Button^ button_ABS_Z;
 			// 
 			// tabPage2
 			// 
-			this->tabPage2->Controls->Add(this->button_ABS_Z);
 			this->tabPage2->Controls->Add(this->button_CHANGESIGN_Z);
 			this->tabPage2->Controls->Add(this->main_screen_Z);
 			this->tabPage2->Controls->Add(this->label2);
@@ -1029,9 +1027,9 @@ private: System::Windows::Forms::Button^ button_ABS_Z;
 			this->button_AC_Z->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->button_AC_Z->Location = System::Drawing::Point(285, 76);
 			this->button_AC_Z->Name = L"button_AC_Z";
-			this->button_AC_Z->Size = System::Drawing::Size(50, 50);
+			this->button_AC_Z->Size = System::Drawing::Size(106, 50);
 			this->button_AC_Z->TabIndex = 116;
-			this->button_AC_Z->Text = L"DEL";
+			this->button_AC_Z->Text = L"DELETE";
 			this->button_AC_Z->UseVisualStyleBackColor = false;
 			this->button_AC_Z->Click += gcnew System::EventHandler(this, &MyForm::button_CLEAR_Z_Click);
 			// 
@@ -1044,7 +1042,7 @@ private: System::Windows::Forms::Button^ button_ABS_Z;
 			this->button_DELETE_Z->Font = (gcnew System::Drawing::Font(L"Arial", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button_DELETE_Z->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_DELETE_Z->Location = System::Drawing::Point(341, 76);
+			this->button_DELETE_Z->Location = System::Drawing::Point(397, 76);
 			this->button_DELETE_Z->Name = L"button_DELETE_Z";
 			this->button_DELETE_Z->Size = System::Drawing::Size(50, 50);
 			this->button_DELETE_Z->TabIndex = 108;
@@ -1919,23 +1917,6 @@ private: System::Windows::Forms::Button^ button_ABS_Z;
 			this->lbl_info->TabIndex = 65;
 			this->lbl_info->Text = L"Информационные сообщения!";
 			// 
-			// button_ABS_Z
-			// 
-			this->button_ABS_Z->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->button_ABS_Z->BackColor = System::Drawing::SystemColors::Menu;
-			this->button_ABS_Z->FlatAppearance->BorderSize = 0;
-			this->button_ABS_Z->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_ABS_Z->Font = (gcnew System::Drawing::Font(L"Arial", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button_ABS_Z->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_ABS_Z->Location = System::Drawing::Point(397, 76);
-			this->button_ABS_Z->Name = L"button_ABS_Z";
-			this->button_ABS_Z->Size = System::Drawing::Size(50, 50);
-			this->button_ABS_Z->TabIndex = 121;
-			this->button_ABS_Z->Text = L"ABS";
-			this->button_ABS_Z->UseVisualStyleBackColor = false;
-			this->button_ABS_Z->Click += gcnew System::EventHandler(this, &MyForm::button_ABS_Z_Click);
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
@@ -2472,13 +2453,13 @@ private: bool checkAnotherOperation_Z() {
 		|| additional_screen_Z->Text->EndsWith("^");
 }
 
-private: System::Void button_ABS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
+/*private: System::Void button_ABS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
 	if (!checkAnotherOperation_Z() && main_screen_Z->Text->Length == 0)
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text + "(");
 	else
 		lbl_info->Text = "Неверная операция!";
-}
+}*/
 
 private: System::Void button_LCM_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
