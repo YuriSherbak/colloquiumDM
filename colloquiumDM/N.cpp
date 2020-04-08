@@ -230,22 +230,15 @@ N N::MUL_NN_N(N b)
 
 	int ch = 0;
 	if (a.number[0] == 0 || b.number[0] == 0) {
-
-
 	}
 	else {
-
 		for (int i = b.number.size() - 1; i >= 0; i--)
 		{
 			res2 = a.MUL_ND_N(b.number[i]);
-
 			res2 = res2.MUL_Nk_N(ch);
 			ch++;
-
 			res1 = res1.ADD_NN_N(res2);
-
 		}
-
 	}
 	return res1;
 }
@@ -338,15 +331,27 @@ N N::MOD_NN_N(N b)
 
 N N::GCF_NN_N(N b)
 {
-	return N();
+	N a = *this;
+	N _a = a;
+	N _b = b;
+	while (_a.COM_NN_D(_b) != 0) {
+		if (_a.COM_NN_D(_b) == 2) {
+			_a = _a.SUB_NN_N(_b);
+		}
+		else {
+			_b = _b.SUB_NN_N(_a);
+		}
+	}
+	return _a;
 }
 
 N N::LCM_NN_N(N b)
 {
-	return N();
+	N result;
+	result = MUL_NN_N(b);
+	result = result.DIV_NN_N(GCF_NN_N(b));
+	return result;
 }
-
-
 
 N::~N()
 {

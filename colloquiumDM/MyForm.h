@@ -2215,6 +2215,11 @@ private: System::Void button_LCM_N_Click(System::Object^ sender, System::EventAr
 		lbl_info->Text = "Неверная операция!";
 }
 private: System::Void button_GCD_N_Click(System::Object^ sender, System::EventArgs^ e) {
+	Button^ btn = (Button^)sender;
+	if (!chechAnotherOperation() && main_screen_N->Text->Length == 0)
+		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text + "(");
+	else
+		lbl_info->Text = "Неверная операция!";
 }
 private: System::Void button_MOD_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
