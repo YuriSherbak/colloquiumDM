@@ -1942,6 +1942,7 @@ private: System::Windows::Forms::Button^ button_CHANGESIGN_Z;
 #pragma endregion
 		
 //------------------------- Main Screen for N --------------------------------------
+
 private: System::Void main_screen_N_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
 	if (e->KeyChar >= '0' && checkmainScreenFirstIsNotNull() && (e->KeyChar <= '9')
 		|| (e->KeyChar == '\b')		//backspace
@@ -2042,8 +2043,9 @@ private: System::Void main_screen_N_TextChanged(System::Object^ sender, System::
 		}
 	}	
 }
-//-------------------------------------------------------------------------------
+
 //------------------------- btn logic for N--------------------------------------
+
 private: System::Void button_1_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
 	if (checkmainScreenFirstIsNotNull()) {
@@ -2100,9 +2102,11 @@ private: System::Void button_9_N_Click(System::Object^ sender, System::EventArgs
 }
 private: System::Void button_0_N_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreenFirstIsNotNull()) {
+	if ((!additional_screen_N->Text->EndsWith("/") || checkmainScreenFirstIsNotNull())
+		&& main_screen_N->Text->Length > 0)
 		main_screen_N->Text = String::Concat(main_screen_N->Text, btn->Text);
-	}
+	else if (additional_screen_N->Text->EndsWith("/"))
+		lbl_info->Text = "На 0 делить нельзя!";
 }
 
 
@@ -2152,8 +2156,8 @@ private: System::Void button_EQUALS_N_Click(System::Object^ sender, System::Even
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 }
 //-------------------------------------------------------------------------------
-private: System::Void button_CHANGE_SIGN_N_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+/*private: System::Void button_CHANGE_SIGN_N_Click(System::Object^ sender, System::EventArgs^ e) {
+}*/
 
 
 private: System::Void button_AC_N_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -2222,6 +2226,7 @@ private: System::Void button_10DEGREE_N_Click(System::Object^ sender, System::Ev
 	else
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 }
+
 //------------------------- Main Screen for Z --------------------------------------
 
 private: bool checkMainScreen_Z_NotEmpty() {
@@ -2322,9 +2327,8 @@ private: System::Void main_screen_Z_TextChanged(System::Object^ sender, System::
 }
 
 
-
-
 //----------------------------BUTTONS FOR Z---------------------------------------//
+
 private: System::Void button_1_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
 	if (checkmainScreen_Z_FirstIsNotNull())
@@ -2372,9 +2376,14 @@ private: System::Void button_9_Z_Click(System::Object^ sender, System::EventArgs
 }
 private: System::Void button_0_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
-	if (checkmainScreen_Z_FirstIsNotNull())
+	
+	if ((!additional_screen_Z->Text->EndsWith("/") || checkmainScreen_Z_FirstIsNotNull())
+		&& main_screen_Z->Text->Length > 0)
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
+	else if (additional_screen_Z->Text->EndsWith("/"))
+		lbl_info->Text = "На 0 делить нельзя!";
 }
+
 
 private: System::Void button_PLUS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
@@ -2420,6 +2429,7 @@ private: System::Void button_EQUALS_Z_Click(System::Object^ sender, System::Even
 		lbl_info->Text = "Пустая строка! Введите какое-нибудь число!";
 }
 
+
 private: System::Void button_CLEAR_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	main_screen_Z->Text = "";
 	additional_screen_Z->Text = "";
@@ -2453,13 +2463,6 @@ private: bool checkAnotherOperation_Z() {
 		|| additional_screen_Z->Text->EndsWith("^");
 }
 
-/*private: System::Void button_ABS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
-	Button^ btn = (Button^)sender;
-	if (!checkAnotherOperation_Z() && main_screen_Z->Text->Length == 0)
-		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text + "(");
-	else
-		lbl_info->Text = "Неверная операция!";
-}*/
 
 private: System::Void button_LCM_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
@@ -2497,6 +2500,15 @@ private: System::Void button_10DEGREE_Z_Click(System::Object^ sender, System::Ev
 }
 private: System::Void button_CHANGESIGN_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+
+
+	   /*private: System::Void button_ABS_Z_Click(System::Object^ sender, System::EventArgs^ e) {
+		   Button^ btn = (Button^)sender;
+		   if (!checkAnotherOperation_Z() && main_screen_Z->Text->Length == 0)
+			   main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text + "(");
+		   else
+			   lbl_info->Text = "Неверная операция!";
+	   }*/
 
 };
 }
