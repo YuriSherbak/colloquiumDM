@@ -2388,7 +2388,7 @@ private: System::Void button_MINUS_Z_Click(System::Object^ sender, System::Event
 	if (checkMainScreen_Z_NotEmpty())
 		main_screen_Z->Text = String::Concat(main_screen_Z->Text, btn->Text);
 	else
-		lbl_info->Text = "ѕуста€ строка! ¬ведите какое-нибудь число!";
+		main_screen_Z->Text = "0" + btn->Text;
 }
 private: System::Void button_MULT_Z_Click(System::Object^ sender, System::EventArgs^ e) {
 	Button^ btn = (Button^)sender;
